@@ -1,0 +1,25 @@
+\section{Introduction}
+\label{sec:intro}
+
+The two-dimensional shear driven flow over a cavity presents an interesting case of successive bifurcations appearing in a hydrodynamic flow. The flow case has been brought to the attention of the hydrodynamic stability community by \cite{sipp07}, where, the authors used the geometry to investigate the theoretical aspects of stability analysis around time averaged mean flows. The case has featured as an object of investigation in various different contexts of stability and control \citep{rowley06,sipp10,barbagallo09}, model reduction \citep{loiseau18}, self-consistent modeling \citep{meliga17}, center-manifold reduction \citep{negi24} \etc
+
+The basic scenario of the case is this - a boundary layer flow is allowed to develop over flat plate which contains a large depression in the form of a square cavity. Up to a Reynolds number of roughly $\Rey\approx4130$ (based on the cavity height and freestream velocity) a steady circulation develops within the cavity and the developing boundary layer flows smoothly over this circulation as it crosses the open cavity. The first bifurcation of the flow then occurs and the flow settles on to a low amplitude limit-cycle oscillation (LCO) with a characteristic frequency and spatial wavelength. Subsequently, at around $\Rey\approx4500$ a second bifurcation seems to occur and a distinctly different oscillation frequency and wavelength becomes dominant in the flow. While classic asymptotic methods are able to capture the characteristics of the first bifurcation \citep{sipp07,negi24}, modeling the second bifurcation has been a challenge. In this regard, \cite{meliga17} has shown that a second-order self-consistent model \citep{mantivc15}, which takes into account higher harmonics, is able to capture the flow frequencies ocurring after the second bifurcation, although, only the second limit cycle is modeled in the study.
+
+An rather interesting and exhaustive investigation of the flow dyanamics within this Reynolds number regime has been performed by \cite{bengana19}. The authors employed several tools within the dynamical systems framework - linear stability, Floquet analysis, mean flow stability analysis and edge tracking to build a comprehensive picture of the successive bifurcations in the flow as the Reynolds number is varied. Besides the two distinct limit cycles, the authors were also able to identify a quasi-periodic state which has been interpreted as a non-linear superposition of the two distinct limit cycles. This quasi-periodic state is the edge state between the two limit cycles although, the authors speculate that the state might in fact be periodic with a very long period. Various bifurcation points where qulitative changes in flow dynamics are expected to occur also identified.  
+
+Despite the detailed analyses of previous studies, a reduced model representing the essential dynamics of the problem has remained out of reach. In \cite{bengana19} the authors propose a normal form representation of the dynamics but do not attempt to derive the representation or specify the coefficients. The current work proposes a reduced representation based on the center manifold theory \citep{carr82,carr83b,wiggins03,guckenheimer83,roberts14}. At the bifurcation point one could evaluate the center subspace of the linearized operator and the center manifold as the (nonlinear) continuation of this tangent subspace. However, this system exhibits only a single oscillatory mode in the center subspace. This is obviously insufficient for the representation of the dynamics where two distinct limit cycle oscillations can emerge. Instead, we consider a perturbed system with a codimension two bifurcation point via the introduction of a ``pseudo-parameter''. This is fairly straightforward to construct whenever the relevant direct and adjoint tangent vectors are known. The center manifold can now be obtained for the perturbed system asymptotically, with the asymptotic variables also including the new pseudo-parameter in addition to the modal variabales (and inverse Reynolds number). The original system is then approximated by replacing the pseudo-parameter by the appropriate value. The reduced model is analyzed and its predictions compared to the extensive analysis reported in \cite{bengana19}. The approach can be thought of as an example of ``backward theory'' developed by \cite{hochs19,roberts22}, wherein, the dynamics of the original system on an invariant manifold are approximated by a nearby system's invariant manifold. Here though, we do not construct the exact invariant manifold but rather an asymptotic one.
+
+%The remainder of the manuscript  is laid out as follows. The flow case at bifurcation along with the synthetic system is described in Section~\ref{sec:cavity_setup}. In Section~\ref{sec:center_manifold} the reduced representation of the flow case is built and discussed. Concluding remarks are made in Section~\ref{sec:conclusion}. 
+
+
+
+
+
+
+
+
+
+
+
+
+

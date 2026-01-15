@@ -1,0 +1,146 @@
+\begin{thebibliography}{27}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
+  \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
+  \def\publ#1{#1}\def\arxiv#1{#1}\def\org#1{#1}\def\st#1{\textit{#1}}
+
+\bibitem[Barbagallo {\em et~al.\/}(2009)Barbagallo, Sipp \&
+  Schmid]{barbagallo09}
+{\sc \au{Barbagallo, Alexandre}, \au{Sipp, Denis} \& \au{Schmid, Peter~J}}
+  \yr{2009}  \at{Closed-loop control of an open cavity flow using reduced-order
+  models}.  \jt{Journal of Fluid Mechanics}  \bvol{641},  \pg{1--50}.
+
+\bibitem[Bengana {\em et~al.\/}(2019)Bengana, Loiseau, Robinet \&
+  Tuckerman]{bengana19}
+{\sc \au{Bengana, Y.}, \au{Loiseau, J.-Ch.}, \au{Robinet, J.-Ch.} \&
+  \au{Tuckerman, L.~S.}} \yr{2019}  \at{Bifurcation analysis and frequency
+  prediction in shear-driven cavity flow}.  \jt{Journal of Fluid Mechanics}
+  \bvol{875},  \pg{725–757}.
+
+\bibitem[Carini {\em et~al.\/}(2015)Carini, Auteri \& Giannetti]{carini15}
+{\sc \au{Carini, M.}, \au{Auteri, F.} \& \au{Giannetti, F.}} \yr{2015}
+  \at{Centre-manifold reduction of bifurcating flows}.  \jt{Journal of Fluid
+  Mechanics}  \bvol{767},  \pg{109–145}.
+
+\bibitem[Carr(1982)]{carr82}
+{\sc \au{Carr, Jack}} \yr{1982} {\em Applications of centre manifold theory\/},
+  ,  \vol{vol.~35}.  \publ{Springer Science \& Business Media}.
+
+\bibitem[Carr \& Muncaster(1983)]{carr83b}
+{\sc \au{Carr, Jack} \& \au{Muncaster, Robert~G}} \yr{1983}  \at{The
+  application of centre manifolds to amplitude expansions. i. ordinary
+  differential equations}.  \jt{Journal of Differential Equations}
+  \bvol{50}~(2),  \pg{260--279}.
+
+\bibitem[Coullet \& Spiegel(1983)]{coullet83}
+{\sc \au{Coullet, P.~H.} \& \au{Spiegel, E.~A.}} \yr{1983}  \at{Amplitude
+  equations for systems with competing instabilities}.  \jt{SIAM Journal on
+  Applied Mathematics}  \bvol{43}~(4),  \pg{776--821}.
+
+\bibitem[Cox \& Roberts(1991)]{cox91}
+{\sc \au{Cox, S.~M.} \& \au{Roberts, A.~J.}} \yr{1991}  \at{Centre manifolds of
+  forced dynamical systems}.  \jt{The Journal of the Australian Mathematical
+  Society. Series B. Applied Mathematics}  \bvol{32}~(4),  \pg{401–436}.
+
+\bibitem[Fischer {\em et~al.\/}(2008)Fischer, Lottes \& Kerkemeier]{nek5000}
+{\sc \au{Fischer, P.~F.}, \au{Lottes, J.~W.} \& \au{Kerkemeier, S.~G.}}
+  \yr{2008} Nek5000 web page. \url{http://nek5000.mcs.anl.gov}.
+
+\bibitem[Guckenheimer \& Holmes(1983)]{guckenheimer83}
+{\sc \au{Guckenheimer, John} \& \au{Holmes, Philip}} \yr{1983} {\em Nonlinear
+  Oscillations, Dynamical Systems, and Bifurcations of Vector Fields\/}.
+  \publ{Springer Science \& Business Media New York}.
+
+\bibitem[Hochs \& Roberts(2019)]{hochs19}
+{\sc \au{Hochs, Peter} \& \au{Roberts, A.J.}} \yr{2019}  \at{Normal forms and
+  invariant manifolds for nonlinear, non-autonomous pdes, viewed as odes in
+  infinite dimensions}.  \jt{Journal of Differential Equations}
+  \bvol{267}~(12),  \pg{7263--7312}.
+
+\bibitem[Jain \& Haller(2022)]{jain22}
+{\sc \au{Jain, Shobhit} \& \au{Haller, George}} \yr{2022}  \at{How to compute
+  invariant manifolds and their reduced dynamics in high-dimensional finite
+  element models}.  \jt{Nonlinear dynamics}  \bvol{107}~(2),  \pg{1417--1450}.
+
+\bibitem[Kuznetsov(2004)]{kuznetsov}
+{\sc \au{Kuznetsov, Yuri~A.}} \yr{2004} {\em Elements of Applied Bifurcation
+  Theory\/}.  \publ{Springer-Verlag New York}.
+
+\bibitem[Loiseau \& Brunton(2018)]{loiseau18}
+{\sc \au{Loiseau, Jean-Christophe} \& \au{Brunton, Steven~L.}} \yr{2018}
+  \at{Constrained sparse galerkin regression}.  \jt{Journal of Fluid Mechanics}
+   \bvol{838},  \pg{42–67}.
+
+\bibitem[Manti{\v{c}}-Lugo {\em et~al.\/}(2015)Manti{\v{c}}-Lugo, Arratia \&
+  Gallaire]{mantivc15}
+{\sc \au{Manti{\v{c}}-Lugo, Vladislav}, \au{Arratia, Crist{\'o}bal} \&
+  \au{Gallaire, Fran{\c{c}}ois}} \yr{2015}  \at{A self-consistent model for the
+  saturation dynamics of the vortex shedding around the mean flow in the
+  unstable cylinder wake}.  \jt{Physics of Fluids}  \bvol{27}~(7).
+
+\bibitem[Meliga(2017)]{meliga17}
+{\sc \au{Meliga, Philippe}} \yr{2017}  \at{Harmonics generation and the
+  mechanics of saturation in flow over an open cavity: a second-order
+  self-consistent description}.  \jt{Journal of Fluid Mechanics}  \bvol{826},
+  \pg{503--521}.
+
+\bibitem[Mercer \& Roberts(1990)]{mercer90}
+{\sc \au{Mercer, G.~N.} \& \au{Roberts, A.~J.}} \yr{1990}  \at{A centre
+  manifold description of contaminant dispersion in channels with varying flow
+  properties}.  \jt{SIAM Journal on Applied Mathematics}  \bvol{50}~(6),
+  \pg{1547--1565}.
+
+\bibitem[Negi(2024)]{negi24}
+{\sc \au{Negi, Prabal~S}} \yr{2024}  \at{Asymptotic center--manifold for the
+  navier--stokes}.  \jt{arXiv preprint arXiv:2411.03727} .
+
+\bibitem[Negi(2026)]{negi26}
+{\sc \au{Negi, Prabal~S.}} \yr{2026}  \at{Constructing asymptotic center
+  manifold for extended systems}.  \jt{submitted to Nonlinear Dynamics} .
+
+\bibitem[Patera(1984)]{patera84}
+{\sc \au{Patera, Anthony~T.}} \yr{1984}  \at{A spectral element method for
+  fluid dynamics: Laminar flow in a channel expansion}.  \jt{Journal of
+  Computational Physics}  \bvol{54}~(3),  \pg{468 -- 488}.
+
+\bibitem[Roberts(2014)]{roberts14}
+{\sc \au{Roberts, Anthony~J.}} \yr{2014} {\em Model emergent dynamics in
+  complex systems\/}.  \publ{SIAM}.
+
+\bibitem[Roberts(2022)]{roberts22}
+{\sc \au{Roberts, A.~J.}} \yr{2022} Backwards theory supports modelling via
+  invariant manifolds for non-autonomous dynamical systems.
+
+\bibitem[Rowley \& Williams(2006)]{rowley06}
+{\sc \au{Rowley, Clarence~W} \& \au{Williams, David~R}} \yr{2006}  \at{Dynamics
+  and control of high-reynolds-number flow over open cavities}.  \jt{Annu. Rev.
+  Fluid Mech.}  \bvol{38}~(1),  \pg{251--276}.
+
+\bibitem[Sipp \& Lebedev(2007)]{sipp07}
+{\sc \au{Sipp, D.} \& \au{Lebedev, A.}} \yr{2007}  \at{Global stability of base
+  and mean flows: a general approach and its applications to cylinder and open
+  cavity flows}.  \jt{Journal of Fluid Mechanics}  \bvol{593},  \pg{333–358}.
+
+\bibitem[Sipp {\em et~al.\/}(2010)Sipp, Marquet, Meliga \& Barbagallo]{sipp10}
+{\sc \au{Sipp, Denis}, \au{Marquet, Olivier}, \au{Meliga, Philippe} \&
+  \au{Barbagallo, Alexandre}} \yr{2010}  \at{Dynamics and control of global
+  instabilities in open-flows: A linearized approach}.  \jt{Applied Mechanics
+  Reviews}  \bvol{63}~(3),  \pg{030801}.
+
+\bibitem[Stewart(2002)]{stewart02}
+{\sc \au{Stewart, G.~W.}} \yr{2002}  \at{A {K}rylov--{S}chur algorithm for
+  large eigenproblems}.  \jt{SIAM Journal on Matrix Analysis and Applications}
+  \bvol{23}~(3),  \pg{601--614}.
+
+\bibitem[Vizzaccaro {\em et~al.\/}(2024)Vizzaccaro, Gobat, Frangi \&
+  Touz{\'e}]{vizzaccaro24}
+{\sc \au{Vizzaccaro, Alessandra}, \au{Gobat, Giorgio}, \au{Frangi, Attilio} \&
+  \au{Touz{\'e}, Cyril}} \yr{2024}  \at{Direct parametrisation of invariant
+  manifolds for non-autonomous forced systems including superharmonic
+  resonances}.  \jt{Nonlinear Dynamics}  \bvol{112}~(8),  \pg{6255--6290}.
+
+\bibitem[Wiggins(2003)]{wiggins03}
+{\sc \au{Wiggins, Stephen}} \yr{2003} {\em Introduction to Applied Nonlinear
+  Dynamical Systems and Chaos\/}.  \publ{Springer-Verlag New York}.
+
+\end{thebibliography}

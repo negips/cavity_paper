@@ -1,0 +1,148 @@
+\begin{thebibliography}{}
+
+\bibitem[Barbagallo et~al., 2009]{barbagallo09}
+Barbagallo, A., Sipp, D., and Schmid, P.~J. (2009).
+\newblock Closed-loop control of an open cavity flow using reduced-order
+  models.
+\newblock {\em Journal of Fluid Mechanics}, 641:1--50.
+
+\bibitem[Bengana et~al., 2019]{bengana19}
+Bengana, Y., Loiseau, J.-C., Robinet, J.-C., and Tuckerman, L.~S. (2019).
+\newblock Bifurcation analysis and frequency prediction in shear-driven cavity
+  flow.
+\newblock {\em Journal of Fluid Mechanics}, 875:725–757.
+
+\bibitem[Carini et~al., 2015]{carini15}
+Carini, M., Auteri, F., and Giannetti, F. (2015).
+\newblock Centre-manifold reduction of bifurcating flows.
+\newblock {\em Journal of Fluid Mechanics}, 767:109–145.
+
+\bibitem[Carr, 1982]{carr82}
+Carr, J. (1982).
+\newblock {\em Applications of centre manifold theory}, volume~35.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Carr and Muncaster, 1983]{carr83b}
+Carr, J. and Muncaster, R.~G. (1983).
+\newblock The application of centre manifolds to amplitude expansions. i.
+  ordinary differential equations.
+\newblock {\em Journal of Differential Equations}, 50(2):260--279.
+
+\bibitem[Coullet and Spiegel, 1983]{coullet83}
+Coullet, P.~H. and Spiegel, E.~A. (1983).
+\newblock Amplitude equations for systems with competing instabilities.
+\newblock {\em SIAM Journal on Applied Mathematics}, 43(4):776--821.
+
+\bibitem[Cox and Roberts, 1991]{cox91}
+Cox, S.~M. and Roberts, A.~J. (1991).
+\newblock Centre manifolds of forced dynamical systems.
+\newblock {\em The Journal of the Australian Mathematical Society. Series B.
+  Applied Mathematics}, 32(4):401–436.
+
+\bibitem[Fischer et~al., 2008]{nek5000}
+Fischer, P.~F., Lottes, J.~W., and Kerkemeier, S.~G. (2008).
+\newblock Nek5000 web page.
+\newblock \url{http://nek5000.mcs.anl.gov}.
+
+\bibitem[Guckenheimer and Holmes, 1983]{guckenheimer83}
+Guckenheimer, J. and Holmes, P. (1983).
+\newblock {\em Nonlinear Oscillations, Dynamical Systems, and Bifurcations of
+  Vector Fields}.
+\newblock Springer Science \& Business Media New York.
+
+\bibitem[Hochs and Roberts, 2019]{hochs19}
+Hochs, P. and Roberts, A. (2019).
+\newblock Normal forms and invariant manifolds for nonlinear, non-autonomous
+  pdes, viewed as odes in infinite dimensions.
+\newblock {\em Journal of Differential Equations}, 267(12):7263--7312.
+
+\bibitem[Jain and Haller, 2022]{jain22}
+Jain, S. and Haller, G. (2022).
+\newblock How to compute invariant manifolds and their reduced dynamics in
+  high-dimensional finite element models.
+\newblock {\em Nonlinear dynamics}, 107(2):1417--1450.
+
+\bibitem[Loiseau and Brunton, 2018]{loiseau18}
+Loiseau, J.-C. and Brunton, S.~L. (2018).
+\newblock Constrained sparse galerkin regression.
+\newblock {\em Journal of Fluid Mechanics}, 838:42–67.
+
+\bibitem[Manti{\v{c}}-Lugo et~al., 2015]{mantivc15}
+Manti{\v{c}}-Lugo, V., Arratia, C., and Gallaire, F. (2015).
+\newblock A self-consistent model for the saturation dynamics of the vortex
+  shedding around the mean flow in the unstable cylinder wake.
+\newblock {\em Physics of Fluids}, 27(7).
+
+\bibitem[Meliga, 2017]{meliga17}
+Meliga, P. (2017).
+\newblock Harmonics generation and the mechanics of saturation in flow over an
+  open cavity: a second-order self-consistent description.
+\newblock {\em Journal of Fluid Mechanics}, 826:503--521.
+
+\bibitem[Mercer and Roberts, 1990]{mercer90}
+Mercer, G.~N. and Roberts, A.~J. (1990).
+\newblock A centre manifold description of contaminant dispersion in channels
+  with varying flow properties.
+\newblock {\em SIAM Journal on Applied Mathematics}, 50(6):1547--1565.
+
+\bibitem[Negi, 2024]{negi24}
+Negi, P.~S. (2024).
+\newblock Asymptotic center--manifold for the navier--stokes.
+\newblock {\em arXiv preprint arXiv:2411.03727}.
+
+\bibitem[Negi, 2026]{negi26}
+Negi, P.~S. (2026).
+\newblock Constructing asymptotic center manifold for extended systems.
+\newblock {\em submitted to Nonlinear Dynamics}.
+
+\bibitem[Patera, 1984]{patera84}
+Patera, A.~T. (1984).
+\newblock A spectral element method for fluid dynamics: Laminar flow in a
+  channel expansion.
+\newblock {\em Journal of Computational Physics}, 54(3):468 -- 488.
+
+\bibitem[Roberts, 2014]{roberts14}
+Roberts, A.~J. (2014).
+\newblock {\em Model emergent dynamics in complex systems}.
+\newblock SIAM.
+
+\bibitem[Roberts, 2022]{roberts22}
+Roberts, A.~J. (2022).
+\newblock Backwards theory supports modelling via invariant manifolds for
+  non-autonomous dynamical systems.
+
+\bibitem[Rowley and Williams, 2006]{rowley06}
+Rowley, C.~W. and Williams, D.~R. (2006).
+\newblock Dynamics and control of high-reynolds-number flow over open cavities.
+\newblock {\em Annu. Rev. Fluid Mech.}, 38(1):251--276.
+
+\bibitem[Sipp and Lebedev, 2007]{sipp07}
+Sipp, D. and Lebedev, A. (2007).
+\newblock Global stability of base and mean flows: a general approach and its
+  applications to cylinder and open cavity flows.
+\newblock {\em Journal of Fluid Mechanics}, 593:333–358.
+
+\bibitem[Sipp et~al., 2010]{sipp10}
+Sipp, D., Marquet, O., Meliga, P., and Barbagallo, A. (2010).
+\newblock Dynamics and control of global instabilities in open-flows: A
+  linearized approach.
+\newblock {\em Applied Mechanics Reviews}, 63(3):030801.
+
+\bibitem[Stewart, 2002]{stewart02}
+Stewart, G.~W. (2002).
+\newblock A {K}rylov--{S}chur algorithm for large eigenproblems.
+\newblock {\em SIAM Journal on Matrix Analysis and Applications},
+  23(3):601--614.
+
+\bibitem[Vizzaccaro et~al., 2024]{vizzaccaro24}
+Vizzaccaro, A., Gobat, G., Frangi, A., and Touz{\'e}, C. (2024).
+\newblock Direct parametrisation of invariant manifolds for non-autonomous
+  forced systems including superharmonic resonances.
+\newblock {\em Nonlinear Dynamics}, 112(8):6255--6290.
+
+\bibitem[Wiggins, 2003]{wiggins03}
+Wiggins, S. (2003).
+\newblock {\em Introduction to Applied Nonlinear Dynamical Systems and Chaos}.
+\newblock Springer-Verlag New York.
+
+\end{thebibliography}

@@ -1,0 +1,125 @@
+\documentclass[aps,prr,twocolumn,groupedaddress]{revtex4-2}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{accents}
+\usepackage{contour}
+\usepackage{relsize}
+%\usepackage{stmaryrd}
+%\usepackage{logix}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{natbib}
+\usepackage[hidelinks]{hyperref}
+%\hypersetup{
+%	colorlinks = true,
+%	urlcolor   = blue,
+%	citecolor  = black,
+%}
+\usepackage{tikz}
+\usepackage[bb=stix,bfbb]{mathalpha}
+%\usepackage{bbold}
+\usepackage{bm}
+
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{subcaption}
+
+\newcommand*{\dt}[1]{%
+	\accentset{\mbox{\large\bfseries .}}{#1}}
+
+\newcommand{\obliquesymbol}[1]{%
+	\begin{tikzpicture}[#1]%
+		\draw (0,0) -- (1.0ex,0);%
+		\draw (0.5ex,0) -- (1.0ex,0.8ex);%
+	\end{tikzpicture}%
+}
+
+\graphicspath{{imgs/}{imgs2/}}
+
+
+\newcommand{\leqnos}{\tagsleft@true\let\veqno\@@leqno}
+\newcommand{\reqnos}{\tagsleft@false\let\veqno\@@eqno}
+
+
+% Velocity field
+\newcommand{\vfield}[1]{
+	\boldsymbol{#1}
+}
+% Pressure field
+\newcommand{\pfield}[1]{
+	\mathrm{#1}
+}
+\newcommand{\vpfield}[1]{
+	\mathbb{#1}
+}
+\newcommand{\efield}[1]{
+	\mathbb{\widehat{#1}}
+}
+\newcommand{\inv}[1]{
+	\mathrm{#1^{-1}}
+}
+\newcommand{\mathsfbi}[1]{
+	\bm{\mathsf{#1}}
+}
+
+\newcommand{\fancy}[1]{{\color{white}\contour{black}{#1}}}
+
+\def\vecU{\boldsymbol{U}}
+\def\vecUb{\vfield{U^{0}}}
+\def\vecPb{\pfield{P^{0}}}
+\def\vecu{\vfield{u}}
+\def\vecv{\vfield{v}}
+\def\vecy{\vfield{y}}
+\def\vecyp{\mathbb{y}}
+\def\bcdot{\boldsymbol{\cdot}}
+\def\ie{\textit{i.e.} }
+\def\blbracket{\boldsymbol{\lceil}}
+\def\brbracket{\boldsymbol{\rceil}}
+
+\def\invRec{\inv{Re_{c}}}
+\def\Rey{\mathrm{Re}}
+
+%\def\bigblbracket{\boldsymbol{\left\lceil}}
+%\def\bigbrbracket{\boldsymbol{\right\rceil}}
+
+\DeclarePairedDelimiter{\vpceil}{\boldsymbol{\lceil}}{\boldsymbol{\rceil}}
+\DeclareBoldMathCommand\bigblbracket{\left\lceil}
+\DeclareBoldMathCommand\bigbrbracket{\right\rceil}
+	
+
+\begin{document}
+
+%opening
+\title{Asymptotic Center--Manifold for the Navier--Stokes}
+\author{Prabal S. Negi}
+\email[]{prabal.negi@oist.jp}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{Okinawa Institute of Science and Technology Graduate University, Onna, Okinawa 904-0495, Japan}
+
+\date{\today}
+
+
+\begin{abstract}
+Center-manifold approximations for infinite-dimensional systems are treated in the context of the Navier--Stokes equations extended to include an equation for the parameter evolution. The consequences of system extension are non-trivial and are examined in detail. The extended system is reformulated via an isomorphic transformation, and the application of the center-manifold theorem to the reformulated system results in a finite set of center-manifold amplitude equations coupled with an infinite-dimensional graph equation for the stable subspace solution. General expressions for the asymptotic solution of the graph equation are then derived. The main benefit of such an approach is that the graph equation, and the subsequent asymptotic expressions are formally valid even when the system is perturbed slightly away from the bifurcation point. The derivation is then applied to two cases - the classic case of the Hopf bifurcation of the cylinder wake, and a case of flow in an open cavity which has interesting dynamical properties after bifurcation. Predictions of the angular frequencies of the reduced systems are in good agreement with those obtained for the full systems close to the bifurcation point. The Stuart-Landau equations for the two cases are also obtained. The presented methodology may easily be applied to other infinite-dimensional systems. 
+\end{abstract}
+
+\maketitle
+
+\input{intro}
+\input{derivation_p1}
+\input{cyl}
+\input{cavity}
+\input{conclusion}
+\input{appendix}
+
+\FloatBarrier
+
+\bibliographystyle{apalike}
+\bibliography{references}
+%\input{main.bbl}
+
+\end{document} 
+

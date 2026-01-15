@@ -1,0 +1,115 @@
+\documentclass[lineno]{jfm}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{accents}
+\usepackage{contour}
+\usepackage{relsize}
+%\usepackage{stmaryrd}
+%\usepackage{logix}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks = true,
+	urlcolor   = blue,
+	citecolor  = black,
+}
+\usepackage{tikz}
+\usepackage[bb=stix,bfbb]{mathalpha}
+%\usepackage{bbold}
+\usepackage{bm}
+
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{subcaption}
+
+\newcommand*{\dt}[1]{%
+	\accentset{\mbox{\large\bfseries .}}{#1}}
+
+
+\graphicspath{{imgs/}}
+
+
+\newcommand{\leqnos}{\tagsleft@true\let\veqno\@@leqno}
+\newcommand{\reqnos}{\tagsleft@false\let\veqno\@@eqno}
+
+
+% Velocity field
+\newcommand{\vfield}[1]{
+	\boldsymbol{#1}
+}
+% Pressure field
+\newcommand{\pfield}[1]{
+	\mathrm{#1}
+}
+\newcommand{\vpfield}[1]{
+	\mathbb{#1}
+}
+\newcommand{\efield}[1]{
+	\mathbb{\widehat{#1}}
+}
+\newcommand{\inv}[1]{
+	\mathrm{#1^{-1}}
+}
+
+\newcommand{\fancy}[1]{{\color{white}\contour{black}{#1}}}
+
+\def\vecU{\boldsymbol{U}}
+\def\vecUb{\vfield{U^{0}}}
+\def\vecPb{\pfield{P^{0}}}
+\def\vecu{\vfield{u}}
+\def\vecv{\vfield{v}}
+\def\vecw{\vfield{w}}
+\def\vecy{\vfield{y}}
+\def\vecubar{\bar{\vecu}}
+\def\vecvbar{\bar{\vecv}}
+\def\vecwbar{\bar{\vecw}}
+\def\vecybar{\bar{\vecy}}
+
+\def\bcdot{\boldsymbol{\cdot}}
+\def\ie{\textit{i.e.} }
+\def\rhs{{r.h.s} }
+\def\Lu{\mathbf{L}}
+\def\Nu{\mathbf{N}}
+
+\def\invRec{\inv{\Rey_{c}}}
+\def\Rey{\mathrm{Re}}
+
+\def\parv{z}
+\def\vecparv{\mathbf{\parv}}
+
+
+\DeclarePairedDelimiter{\vpceil}{\boldsymbol{\lceil}}{\boldsymbol{\rceil}}
+\DeclareBoldMathCommand\bigblbracket{\left\lceil}
+\DeclareBoldMathCommand\bigbrbracket{\right\rceil}
+	
+%opening
+\title{A mathematical model for limit-cycle switching in open cavity flow}
+\author{Prabal S. Negi\corresp{\email{prabal.negi@oist.jp}}}
+\affiliation{Okinawa Institute of Science and Technology Graduate University, Onna, Okinawa 904-0495, Japan}
+
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+	A reduced mathematical model for the flow in an open cavity is presented. The reduction is based on the center manifold theory applied to a perturbation of the original system. The model exhibits many of the key characteristics observed in the flow dynamics including unstable quasi-periodic edge states as well as switching of stability of the limit cycles. The model explains the mechanism behind the switching of stability of the limit cycles and also predicts the bifurcation points where such stability switching occurs.
+\end{abstract}
+
+\input{intro}
+\input{cavity}
+%\input{conclusion}
+%\input{appendix}
+
+\FloatBarrier
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document} 
+

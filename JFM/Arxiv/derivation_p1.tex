@@ -1,0 +1,457 @@
+\section{Problem Setup}
+\label{problem_setup}
+
+\subsection{Notation}
+In the subsequent sections a number of mathematical objects, with varying definitions of the space to which they belong (or act on), are encountered. An effort has been made to make the notation compact where possible so that the essential meaning of an expression or operation is clear without the need to write out all individual terms repeatedly. Therefore in this subsection some compact notations and the general rule that has been used for the definition of new objects is described.
+
+Throughout the text, bold symbols ($\vecUb,\vecu,\vecu_{s},\vecv,$ \textit{etc.}) will refer to the velocity fields for the case in consideration. The velocity fields will have an an associated pressure field which ensures the divergence-free evolution of the velocities, which is denoted in Roman font ($\pfield{P^{0}}, \pfield{p},$ \textit{etc.}). The two fields will often appear together in equations, so the pair is represented compactly using the Blackboard bold font as $\mathbb{u} = (\vfield{u},\pfield{p})$, retaining the same alphabet as the velocity field. Later the original system is extended by treating the parameter as a dynamic variable. The extended state variable is then represented by including a hat on the compact notation as $\widehat{\mathbb{u}} = (\mathbb{u},\eta) = (\vfield{u},\pfield{p},\eta)$. Operators are represented using caligraphic font ($\mathcal{L}$) and adjoint operators and variables are indicated by a $^{\dagger}$ symbol. The ``hat'' notation is used for other mathematical objects which are associated with the extended space, so that a linear operator acting on the extended vector space is written as $\mathcal{\widehat{L}}$. Inner products are denoted by $\langle\cdot,\cdot\rangle$ and the vector space underlying the inner-product is inferred from the specific pair of vectors that the inner-product is acting on. Matrices are defined using bold sans serif font ($\mathsfbi{V},\mathsfbi{\widehat{W}},$ \textit{etc}). 
+Since the momentum and divergence equations are written compactly as one using the Blackboard bold notation, a situation will often be encountered where certain terms appear in the momentum equations but have no counter-part in the equation for the divergence-free constraint. Ceiling brackets, $\blbracket \bcdot \brbracket$, are used for such terms. So the non-linear term of the Navier--Stokes will be denoted as
+\begin{equation}
+	\blbracket \vfield{u}\bcdot\nabla\vfield{u} \brbracket =
+	\begin{Bmatrix}
+		\vfield{u}\bcdot\nabla\vfield{u} \\
+		\pfield{0}
+	\end{Bmatrix}, \nonumber
+\end{equation}
+signifying the contribution of the term to the momentum equations along with a null contribution to the continuity equation. Subsequently the extended dynamical system will include the parameter as a dynamic variable. One again encounters scenarios where certain terms have no counter part for this extended equation. The ceiling bracket notation will be used recursively so that quantities of the type $\blbracket \blbracket \vfield{u} \brbracket\brbracket$ and $\blbracket\vpfield{u}\brbracket$ have the following meaning,
+\begin{equation}
+	\begin{aligned}
+		\blbracket \blbracket \vfield{u} \brbracket\brbracket =
+		\blbracket (\vfield{u},\pfield{0}) \brbracket =
+		\begin{Bmatrix}
+			\vfield{u} \\
+			\pfield{0} \\
+			0
+		\end{Bmatrix}; 
+		&	&
+		\blbracket \vpfield{u} \brbracket =
+		\begin{Bmatrix}
+			\vfield{u} \\
+			\pfield{p} \\
+			0
+		\end{Bmatrix}.
+	\end{aligned}
+	\nonumber
+\end{equation}
+Additionally, two matrices $\mathsfbi{B}$ and $\mathsfbi{\widehat{B}}$ are defined as 
+\begin{equation}
+	\begin{aligned}
+		\mathsfbi{B} =
+		\begin{bmatrix}
+			1 & \pfield{0} \\ 
+			0 & \pfield{0}
+		\end{bmatrix}; 
+		&	&
+		\mathsfbi{\widehat{B}} =
+		\begin{bmatrix}
+			1 & 0 & 0 \\ 
+			0 & 0 & 0 \\
+			0 & 0 & 1
+		\end{bmatrix}
+	\end{aligned}
+	\nonumber,
+\end{equation}
+so that the time derivatives are written compactly as 
+\begin{equation}
+	\begin{aligned}
+		\dfrac{\partial (\mathsfbi{B}\vpfield{u})}{\partial t} =
+		\begin{Bmatrix}
+			\dfrac{\partial \vfield{u}}{\partial t} \vspace{1mm}\\
+			\pfield{0}
+		\end{Bmatrix}; 
+		&	&
+		\dfrac{\partial (\mathsfbi{\widehat{B}}\efield{u})}{\partial t} =
+		\begin{Bmatrix}
+			\dfrac{\partial \vfield{u}}{\partial t} \vspace{1mm}\\
+			\pfield{0} \vspace{1mm}\\
+			\dfrac{\partial \eta}{\partial t}
+		\end{Bmatrix}
+	\end{aligned},
+	\nonumber
+\end{equation}
+resulting from the special nature of the incompressibility equation.
+
+%%%%
+\subsection{The Standard Problem}
+Consider the case of of a flow $\vpfield{U} = (\vfield{U},\pfield{P})$ governed by the Navier--Stokes equation, with an appropriate set of boundary conditions, at a specified Reynolds number $\Rey$, given by 
+\begin{equation}
+	\label{NavierStokes}
+	\begin{aligned}
+		\frac{\partial \vfield{U}}{\partial t} =& - \vecU\bcdot\nabla \vecU - \nabla \pfield{P} + \inv{Re}\nabla^{2} \vecU, \\
+		0 =& \nabla\bcdot \vecU.
+	\end{aligned}
+\end{equation}
+It is presumed that the system has a fixed point $\vpfield{U^{0}} = (\vecUb,\pfield{P^{0}})$ for a critical parameter value of $Re_{c}$, at which the system undergoes a bifurcation. The state $\vpfield{U^{0}}$ satisfies the stationary Navier-Stokes equation,
+\begin{equation}
+	\label{NS_stationary}
+	\begin{aligned}
+		-\vecUb\bcdot\nabla \vecUb - \nabla \pfield{P^{0}} + \inv{Re_{c}}\nabla^{2} \vecUb = 0, \\
+		\nabla\bcdot \vecUb	= 0.
+	\end{aligned}
+\end{equation}
+Decomposing an instantaneous flow field as a deviation from the stationary state, $\vpfield{U} = \vpfield{U}^{0} + \vpfield{u}$, given by
+\begin{equation}
+\begin{aligned}
+	\label{flow_field_decomposition}
+	\vecU 			   = \vecUb + \vecu, && 
+	\pfield{P} 		= \pfield{P^{0}} + \pfield{p},
+\end{aligned} \nonumber
+\end{equation}
+one obtains the evolution equations for deviations $\mathbb{u} = (\vecu,\pfield{p})$ as 
+\begin{eqnarray}
+	\label{NS_deviation}
+	\begin{aligned}
+		\frac{\partial \vecu}{\partial t} =& -\vecUb\bcdot\nabla \vecu - \vecu\bcdot\nabla\vecUb - \vecu\bcdot\nabla\vecu - \nabla \pfield{p} + \invRec\nabla^{2}\vecu,&& \\
+		0 =& \nabla\bcdot \vecu. &&
+	\end{aligned}
+\end{eqnarray}
+Linearizing the flow near the stationary state $\mathbb{U^{0}}$ one obtains the first order equations for the evolution of the perturbations as
+\begin{equation}
+	\label{NS_perturbation}
+	\begin{aligned}
+		\frac{\partial \vecu}{\partial t} =& -\vecUb\bcdot\nabla \vecu - \vecu\bcdot\nabla\vecUb - \nabla \pfield{p} + \inv{Re_{c}}\nabla^{2} \vecu, \\
+		0 =& \nabla\bcdot \vecu .
+	\end{aligned}
+\end{equation}
+The standard linearized operator at the bifurcation point acting on $\mathbb{u}$ is denoted as
+\begin{eqnarray}
+	\mathcal{L}(\vpfield{u}) =
+	\begin{bmatrix}
+			-\vecUb\bcdot\nabla  - (\nabla\vecUb)\bcdot + \inv{Re_{c}}\nabla^{2} & -\nabla \\
+			\nabla \bcdot  													     										  & 0
+	\end{bmatrix}
+	\begin{Bmatrix}
+		\vecu \\
+		\pfield{p}
+	\end{Bmatrix},
+	\label{Lop}
+\end{eqnarray}
+with the full non-linear problem written compactly as
+\begin{eqnarray}
+	\label{NS_deviation_compact}
+	\frac{\partial (\mathsfbi{B}\vpfield{u}) }{\partial t} =  \mathcal{L}(\mathbb{u}) - \blbracket \vecu\bcdot\nabla \vecu \brbracket \label{nonlinear_evolution}.
+\end{eqnarray}
+In addition, the adjoint operator to $\mathcal{L}$ is denoted as $\mathcal{L}^{\dagger}$. It is assumed that the matrix pair $(\mathcal{L}, \mathsfbi{B})$ has eigenpairs $\{\lambda_{i},\mathbb{v}_{i}\}$, where, $\lambda_{i}$ is the eigenvalue and $\mathbb{v}_{i}$ is the corresponding right eigenvector. Similarly, $(\mathcal{L},\mathsfbi{B})^{\dagger}$ has eigenpairs $\{\lambda^{*}_{i},\mathbb{v}^{\dagger}_{i}\}$, where $^{*}$ denotes the complex-conjugtation. The scaling of eigenvectors is chosen to satisfy the biorthogonality condition
+\begin{eqnarray}
+	\langle\mathbb{v}^{\dagger}_{i},\mathsfbi{B}\mathbb{v}_{j}\rangle = \delta_{i,j} \label{std_biorthogonality}.
+\end{eqnarray}
+The solutions to equation~\eqref{NS_deviation_compact} are assumed to lie in a Hilbert space $\mathds{H}$. The bifurcation of the system at the critical Reynolds number $Re_{c}$ implies that one or more of the eigenmodes of the linearized operator represented by the matrix pair $(\mathcal{L},\mathsfbi{B})$ has eigenvalues $\lambda$ with $\mathfrak{Re}(\lambda) = 0$, herein referred to as the critical eigenvalues. The space spanned by the eigenvectors of the critical eigenvalues is referred to as the center space of $(\mathcal{L},\mathsfbi{B})$. In the context of center-manifold approximation it is sometimes also referred to as the critical subspace. Accordingly, the Hilbert space $\mathds{H}$ may be decomposed as the direct sum of two invariant subspaces such that
+\begin{equation}
+	\label{Hilbert_space_division}
+	\begin{aligned}
+		\mathds{H} =& \mathds{T}_{c}\bigoplus \mathds{T}_{s},& \\
+		\forall \ \mathbb{u} \in& \mathds{T}_{c},& \mathcal{L}(\mathbb{u}) \in \mathds{T}_{c},  \\
+		\forall \ \mathbb{u} \in& \mathds{T}_{s},& \mathcal{L}(\mathbb{u}) \in \mathds{T}_{s}.  
+	\end{aligned} 
+\end{equation}
+Here, it has been implicitly assumed that $(\mathcal{L},\mathsfbi{B})$ has no unstable eigenvalues. $\mathds{T}_{c}$ denotes the center subspace of $(\mathcal{L},\mathsfbi{B})$ and $\mathds{T}_{s}$ will be referred to as the stable subspace. A matrix $\mathsfbi{V}$ is defined, the columns of which comprise of the eigenvectors corresponding to the critical eigenvalues of $(\mathcal{L},\mathsfbi{B})$, and $\mathsfbi{W}$ is defined as the corresponding matrix for the adjoint operator $(\mathcal{L},\mathsfbi{B})^{\dagger}$. Due to the chosen scaling one obtains the relation $\mathsfbi{W}^{H}\mathsfbi{B}\mathsfbi{V} = \mathsfbi{I}_{n}$, where, $n$ is the dimension of the center subspace and $\mathsfbi{I}_{n}$ is an identity operator of order $n$. 
+
+%%%%%%%%%
+\subsection{The Extended Problem}
+Now consider the full nonlinear evolution equation of the flow field at a parameter value $\inv{Re} = \invRec(1  - \eta)$ where, the deviation of the inverse Reynolds number from its critical value is given by $-\invRec\eta$. The evolution equations for the (deviation) velocity and pressure fields are given by
+\begin{subequations}
+	\label{NS_CM_0}
+	\begin{eqnarray}
+		\label{NS_2}
+			\frac{\partial \vfield{u} }{\partial t} =& \left\lbrace
+			\begin{split}
+				\invRec \nabla^{2}\vecu - \vecUb\bcdot\nabla \vecu - \vecu\bcdot\nabla\vecUb \\
+				%
+				- \nabla \pfield{p}
+				%
+				- \invRec\eta \nabla^{2}\vecUb \\
+				%
+				- \vecu\bcdot\nabla \vecu 
+				%
+				-\invRec\eta\nabla^{2}\vecu
+			\end{split}\right. \\
+			0 =& \nabla\bcdot \vfield{u}, \\
+		\label{parameter_evolution}
+			\frac{\partial \eta}{\partial t} =& 0,
+		\end{eqnarray}
+\end{subequations}
+where the parameter perturbation is included as an additional dynamical equation, in the spirit of its treatment for ordinary differential equations \citep{wiggins03,guckenheimer83} for center-manifold approximations. This system with an additional dynamical equation for the parameter will be referred to as the \emph{extended system}. The new linearized operator $\mathcal{\widehat{L}}$ acting on the extended state $\mathbb{\widehat{u}} = (\mathbb{u},\eta)$, is represented by
+\begin{equation}
+	\mathcal{\widehat{L}}(\mathbb{\widehat{u}}) =
+	\begin{bmatrix}
+		\mathcal{L}& -\blbracket\inv{Re_{c}}\nabla^{2}\vecUb \brbracket \\
+		0 	& 0
+	\end{bmatrix}
+	\begin{Bmatrix}
+		\mathbb{u} \\
+		\eta
+	\end{Bmatrix}
+	\label{Lop_CM},
+\end{equation}
+which is referred to as the \emph{linearized extended system}. One may write the full nonlinear system  represented by equation~\eqref{NS_CM_0} in a more compact form as
+\begin{equation}
+	\label{NS_CM_0_compact}
+	%\begin{aligned}
+	\dfrac{\partial (\mathsfbi{\widehat{B}}\efield{u}) }{\partial t} =
+	\mathcal{\widehat{L}}(\efield{u})  -  \bigblbracket \bigblbracket \invRec\eta\nabla^{2}\vecu \bigbrbracket\bigbrbracket 
+	%
+	- \blbracket\blbracket \vecu\bcdot\nabla \vecu \brbracket\brbracket , 
+	%
+	%\end{aligned}
+\end{equation}
+with the terms in the ceiling brackets denoting the non-linear terms. 
+
+A few observations are made regarding the spectral properties of $(\mathcal{\widehat{L}},\mathsfbi{\widehat{B}})$. If $\{\lambda,\mathbb{v}\}$ is an eigenpair of $(\mathcal{L},\mathsfbi{B})$ then, clearly $\{\lambda,(\mathbb{v},0)\}$ is an eigenpair of the linearized extended system $(\mathcal{\widehat{L}},\mathsfbi{\widehat{B}})$ (which may be verified via substitution). Thus all eigenpairs of the standard linear problem can be trivially extend to the linearized extended problem where the additional dynamic variable $\eta$ vanishes.
+
+The linearized extended system contains another eigenpair which is not present in the original system, $\{\lambda_{0},(\mathbb{v}_{0},\zeta_{0})\}$, where $\lambda_{0} = 0$ and the eigenvector components are not as trivial. After substitution into the eigenvalue equation for $\lambda = 0$ one obtains
+\begin{eqnarray}
+	\mathcal{L}(\vpfield{v}_{0})  -
+	\zeta_{0}\blbracket \invRec\nabla^{2}\vecUb \brbracket = 0, 
+	\label{extended_eigenvector}
+\end{eqnarray}
+where $\zeta_{0}$ is used to scale the eigenvector such that it satifies the appropriate normalization condition. Thus one obtains a new eigenpair for the extended system with a trivial eigenvalue and an eigenvector, $\mathbb{\widehat{v}}_{0} = (\mathbb{v}_{0},\zeta_{0})$, which satisfies equation~\eqref{extended_eigenvector}. This new mode will be referred to as the ``parameter mode''.
+
+ The adjoint operator corresponding to $\mathcal{\widehat{L}}$ is obtained as 
+\begin{equation}
+	\mathcal{\widehat{L}^{\dagger}}(\mathbb{\widehat{u}}^{\dagger}) = 
+	\begin{bmatrix}
+		\mathcal{L}^{\dagger}& 0 \\
+		-\blbracket \invRec\nabla^{2}\vecUb) \brbracket^{H} 	& 0
+	\end{bmatrix}
+	\begin{Bmatrix}
+		\mathbb{u}^{\dagger} \\
+		\eta^{\dagger}
+	\end{Bmatrix}
+	\label{Adjoint_Lop_CM},
+\end{equation} 
+where, the superscript $^{H}$ denotes the complex-conjugated transpose and
+\begin{eqnarray}
+	\blbracket \invRec\nabla^{2}\vecUb \brbracket^{H}(\mathbb{u}^{\dagger}) = \langle\invRec\nabla^{2}\vecUb,\vecu^{\dagger}\rangle. \nonumber
+\end{eqnarray}
+
+For a properly defined adjoint, the spectra of the direct and adjoint problems must be consistent. The new ``adjoint parameter mode'' corresponding to $\lambda^{*}_{0} = 0$ is easily seen to be $\{\lambda^{*}_{0},(\mathbb{v}^{\dagger},\zeta^{\dagger})_{0}\} = \{0,(\mathbb{0},\zeta^{\dagger}_{0})\}$, where the value of $\zeta^{\dagger}_{0}$ depends on the chosen norm. For the adjoint modes that are extensions of the original linear problem one finds that if $\{\lambda^{*}_{i},\mathbb{v}^{\dagger}_{i}\}$ is an eigenpair for $(\mathcal{L},\mathsfbi{B})^{\dagger}$, the corresponding eigenpair for $(\mathcal{\widehat{L}},\mathsfbi{\widehat{B}})^{\dagger}$ is $\{\lambda^{*}_{i},(\mathbb{v}^{\dagger},\zeta^{\dagger})_{i}\}$, with $\zeta^{\dagger}_{i} = -\langle\invRec\nabla^{2}\vecUb,\vfield{v}^{\dagger}_{i}\rangle/\lambda^{*}_{i}$. Note that 
+as $\lambda^{*}_{i}$ approaches zero the eigenvector of this mode approaches the adjoint parameter mode. One must then consider the Jordan or Weierstrass canonical form for the generalized eigenvectors. This particular degenerate case is not addressed in the current manuscript. The biorthogonality condition for the extended system results in
+\begin{eqnarray}
+	\langle\mathbb{\widehat{v}}^{\dagger}_{i},\mathsfbi{\widehat{B}}\mathbb{\widehat{v}}_{j}\rangle = \langle\vpfield{v}^{\dagger}_{i},\mathsfbi{B}\vpfield{v}_{j}\rangle + (\zeta^{\dagger}_{i})^{*}\zeta_{j} = \delta_{i,j}. \label{extended_biorthogonality}
+\end{eqnarray}
+For all the extended eigenmodes this reduces to equation~\eqref{std_biorthogonality} since $\zeta_{j} = 0$ for all $j \ge 1$. The new adjoint parameter mode has $\mathbb{v}^{\dagger}_{0} = 0$ which reduces the biorthogonality relation for the parameter mode to $(\zeta^{\dagger}_{0})^{*}\zeta_{0} = 1$. For the rest of the manuscript it is assumed that $\zeta^{\dagger}_{0} = \zeta_{0} = 1$, and $(\boldsymbol{v}_{0},p_{0})$ are given by equation~\eqref{extended_eigenvector} with $\zeta_{0} = 1$.
+
+Hence, if one has calculated the eigendecomposition (partial or complete) of the original linear problem then one may easily obain the corresponding eigen-decomposition for the extended linear problem with an additional parameter mode that has $\lambda = 0$ as its eigenvalue.
+
+As in the standard problem, one may assume the solutions $\efield{u}$ to lie in an extended Hilbert space $\mathds{\widehat{H}}$, which may be expressed as a direct sum of the two invariant center and stable subspaces of $(\mathcal{\widehat{L}},\mathsfbi{\widehat{B}})$ so that
+\begin{equation}
+	\begin{aligned}
+		\mathds{\widehat{H}} =& \mathds{\widehat{T}}_{c}\bigoplus \mathds{\widehat{T}}_{s},& \\
+		\forall \ \mathbb{\widehat{u}} \in& \mathds{\widehat{T}}_{c}, & \mathcal{\widehat{L}}(\mathbb{\widehat{u}}) \in \mathds{\widehat{T}}_{c}, \\
+		\forall \ \mathbb{\widehat{u}} \in& \mathds{\widehat{T}}_{s}, & \mathcal{\widehat{L}}(\mathbb{\widehat{u}}) \in \mathds{\widehat{T}}_{s}. 
+	\end{aligned} 
+\end{equation}
+One may build matrices $\mathsfbi{\widehat{V}}$ and $\mathsfbi{\widehat{W}}$ whose columns comprise of the critical eigenvectors of the direct and adjoint operators respectively, such that $\mathsfbi{\widehat{W}}^{H}\mathsfbi{\widehat{B}}\mathsfbi{\widehat{V}} = \mathsfbi{I}_{m}$. If $n$ is the dimension of the center subspace $\mathds{T}_{c}$, then clearly the dimension of $\mathds{\widehat{T}}_{c}$ is $m = n + 1$.
+
+It is important to point out at this stage that in the linearized extended system, the only eigenvector that has a non-zero component in the dynamic parameter variable $\eta$ is the parameter mode, which belongs to the critical subspace $\mathds{\widehat{T}}_{c}$. Therefore in the stable subspace $\mathds{\widehat{T}}_{s}$ the extended variable $\eta$ vanishes identically. As an additional note, in the current work the only free parameter is the Reynolds number so the critical subspace dimension is extended only by one. However, one may apply the same procedure for multiple parameters resulting in several ``parameter modes'' for the extension of the critical subspace. 
+
+\section{Center Manifold Approximation}
+\label{center_manifold_derivation}
+
+\subsection{Problem Reformulation}
+The starting point of the center-manifold reduction is taken to be equation~\eqref{NS_CM_0} or its compact form \eqref{NS_CM_0_compact}, which is reformulated in this section so as to express it in a form appropriate for the application of the center-manifold theory. The system is assumed to have a critical subspace $\mathds{\widehat{T}}_{c}$ of dimension $m$ and that the rank-$m$ matrices $\mathsfbi{\widehat{V}}$ and $\mathsfbi{\widehat{W}}$ are defined. The critical eigenvectors of $\mathcal{\widehat{L}}$ which define the columns of $\mathsfbi{\widehat{V}}$ are numbered using a subscript as $\mathsfbi{\widehat{V}} = [\mathbb{\widehat{v}}_{0}, \mathbb{\widehat{v}}_{1}, \ldots, \mathbb{\widehat{v}}_{m-1}]$, with $\efield{v}_{0}$ being the parameter mode. Similarly $\mathsfbi{\widehat{W}} = [\mathbb{\widehat{v}}^{\dagger}_{0}, \mathbb{\widehat{v}}^{\dagger}_{1}, \ldots, \mathbb{\widehat{v}}^{\dagger}_{m-1}] $ represent the corresponding adjoint eigenvectors and, $\mathsfbi{\widehat{\Lambda}} = diag(\lambda_{0},\lambda_{1},\ldots,\lambda_{m-1})$ is the diagonal matrix of the critical eigenvalues of the extended system. Additionally, the matrices $\mathsfbi{V} = [\mathbb{v}_{1}, \ldots, \mathbb{v}_{m-1}]$ and $\mathsfbi{W} = [\mathbb{v}^{\dagger}_{1}, \ldots, \mathbb{v}^{\dagger}_{m-1}]$ are the corresponding matrices of the original linear system. This implicitly assumes that the linear operator is diagonalizable. In the case of defective matrices one would need to replace $\mathsfbi{\widehat{\Lambda}}$ with the equivalent Jordan form. The direct and adjoint eigenmodes would be replaced by the respective generalized eigenmodes and much of the theory would extend in a straightforward manner. 
+
+The solution $\mathbb{\widehat{u}}$ of equation~\eqref{NS_CM_0_compact} is decomposed as the sum of its components in $\mathds{\widehat{T}}_{c}$ and $\mathds{\widehat{T}}_{s}$, \ie $\mathbb{\widehat{u}} = \mathbb{\widehat{u}}_{c} + \mathbb{\widehat{u}}_{s}$.  Since $\mathds{\widehat{T}}_{c}$ is a finite dimensional subspace, we may decompose $\mathbb{\widehat{u}}_{c}$ further into the individual components of each eigenvector so that 
+\begin{eqnarray}
+	\mathbb{\widehat{u}}_{c} = \sum_{i=0}^{m-1}x_{i}\mathbb{\widehat{v}}_{i} = \mathsfbi{\widehat{V}}\mathsfbi{x},
+	& \hspace{5mm}
+	\mathbb{\widehat{u}} = \mathsfbi{\widehat{V}}\mathsfbi{x} + \mathbb{\widehat{u}}_{s} \label{solution_decomposition},
+\end{eqnarray}
+where the $x_{i}$'s are the scalar time-dependent (complex) amplitudes of the critical eigenvectors. The ordered collection of the scalars is represented as a vector $\mathsfbi{x} = [x_{0}, x_{1},\ldots x_{m-1}]^{T}$. Due to the chosen scaling of the eigenvectors, the parameter value is simply $\eta = x_{0}$. In what follows the notations for eigenvectors $\efield{v}_{i} = (\vpfield{v}_{i},\zeta_{i}) = (\vfield{v}_{i},\pfield{p}_{i},\zeta_{i})$ and the stable subspace component $\efield{u}_{s} = (\vpfield{u}_{s},0) = (\vfield{u}_{s},\pfield{p}_{s},0)$ are all used as appropriate. 
+Substituting the solution decomposition (equation~\eqref{solution_decomposition}) into equation~\eqref{NS_CM_0_compact} one obtains
+\begin{equation}
+	\label{NS_CM_1}
+	\begin{aligned}
+	\mathsfbi{\widehat{B}}\mathsfbi{\widehat{V}}\frac{d \mathsfbi{x}}{d t} + \frac{\partial (\mathsfbi{\widehat{B}}\efield{u}_{s})}{\partial t} =&
+	\mathcal{\widehat{L}}(\mathsfbi{\widehat{V}})\mathsfbi{x}  + \mathcal{\widehat{L}}(\efield{u}_{s})  
+	%
+	+ \blbracket\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket\brbracket,
+\end{aligned}
+\end{equation}
+where, the nonlinearities have been represented compactly inside the ceiling brackets by $\mathcal{N}(\mathsfbi{x},\vfield{u}_{s})$, defined as
+\begin{equation}
+	%\label{nonlinearilties}
+	\begin{aligned}
+		\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) =&
+			-\left(\sum_{i=0}^{m-1}x_{i}\vecv_{i} + \vecu_{s} \right)\bcdot\nabla \left(\sum_{j=0}^{m-1}x_{j}\vecv_{j} + \vecu_{s}\right) \\
+			%
+			&- x_{0}\invRec\nabla^{2} \left(\sum_{i=0}^{m-1}x_{i}\vecv_{i} + \vecu_{s} \right).
+			%
+		\end{aligned} \nonumber
+\end{equation}
+
+One may multiply equation~\eqref{NS_CM_1} by $\mathsfbi{\widehat{W}}^{H}$ from the left and obtain a set of equations for the critical eigenvector amplitudes $\mathsfbi{x}$ as
+\begin{eqnarray}
+	\label{NS_CM_1_a}
+	\frac{d \mathsfbi{x}}{d t} =&
+	\mathsfbi{\widehat{\Lambda}x}  +	\mathsfbi{\widehat{W}}^{H}\blbracket\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket\brbracket,
+\end{eqnarray}
+which depend on the stable subspace solution $\vfield{u}_{s}$. Multiplying equation~\eqref{NS_CM_1_a} by $\mathsfbi{\widehat{B}}\mathsfbi{\widehat{V}}$ from the left and subtracting it from equation~\eqref{NS_CM_1} one then obtains the equation for the stable subspace solution
+\begin{equation}
+	\label{NS_CM_1_b}
+	\frac{\partial (\mathsfbi{\widehat{B}}\efield{u}_{s})}{\partial t} =
+	\mathcal{\widehat{L}}(\efield{u}_{s}) + (\mathsfbi{\widehat{I}} - \mathsfbi{\widehat{B}}\mathsfbi{\widehat{V}}\mathsfbi{\widehat{W}}^{H})\blbracket\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket\brbracket,
+\end{equation}
+where $\mathsfbi{\widehat{I}}$ is the identity matrix in the extended space. Both terms $\efield{u}_{s} = (\vpfield{u}_{s},0)$ and $\blbracket\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket\brbracket$ have a zero component in the extended variable therefore, the following relations hold, 
+\begin{equation}
+	\label{Hat_Ts_to_Ts}
+	\begin{aligned}
+		\mathsfbi{\widehat{B}}\efield{u}_{s} =& \blbracket \mathsfbi{B}\vpfield{u}_{s}\brbracket, \\
+		%
+		\mathcal{\widehat{L}}(\efield{u}_{s}) =& \blbracket\mathcal{L}(\vpfield{u}_{s})\brbracket, \\
+		%
+		(\mathsfbi{\widehat{I}} -\mathsfbi{\widehat{B}}\mathsfbi{\widehat{V}}\mathsfbi{\widehat{W}}^{H})\blbracket\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket\brbracket =& \blbracket(\mathsfbi{I} - \mathsfbi{B}\mathsfbi{V}\mathsfbi{W}^{H})\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket \brbracket.
+	\end{aligned} \nonumber
+\end{equation}
+Therefore all terms in equation~\eqref{NS_CM_1_b} may be written without the hat notation and one pair of ceiling brackets may be dropped from the equations. A further representation change is made for the nonlinear terms such that
+\begin{equation}
+	%\label{nonlinear_representations}
+	\begin{aligned}
+		\mathcal{\widehat{F}}(\mathsfbi{x},\vfield{u}_{s}) =& \mathsfbi{\widehat{W}}^{H}\blbracket\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s})\brbracket\brbracket,  \\
+		%
+		\mathcal{G}(\mathsfbi{x},\vfield{u}_{s}) =&
+		\mathsfbi{Q}\blbracket\mathcal{N}(\mathsfbi{x},\vfield{u}_{s}) \brbracket, \\
+		%
+		\mathsfbi{Q} =&
+		(\mathsfbi{I} - \mathsfbi{B}\mathsfbi{V}\mathsfbi{W}^{H}),
+	\end{aligned} \nonumber
+\end{equation}
+which then reduces equation~\eqref{NS_CM_0_compact} to the following set of equations,
+\begin{subequations}
+	\label{NS_CM_final}
+	\begin{eqnarray}
+		\label{CM_xk}
+		\dt{\mathsfbi{x}} = 
+		& \mathsfbi{\widehat{\Lambda}} \mathsfbi{x} + \mathcal{\widehat{F}}(\mathsfbi{x},\vfield{u}_{s});
+	    &  \forall \ \mathsfbi{x} \in \mathds{C}^{m}, \\
+		%
+		\label{CM_stable}
+		\frac{\partial (\mathsfbi{B}\vpfield{u}_{s})}{\partial t} = 
+		& \mathcal{L}(\vpfield{u}_{s}) +\mathcal{G}(\mathsfbi{x},\vfield{u}_{s}); 
+		& \forall \ \vpfield{u}_{s} \in \mathds{T}_{s},
+	\end{eqnarray}
+\end{subequations}
+where, $\mathds{C}^{m}$ is the complex space of dimension $m$, and, the overhead dot notation has been used to represent the time derivative, $d\mathsfbi{x}/dt$ . The result is a set of ODEs for $x_{k}$ given by equation~\eqref{CM_xk}, which represent the amplitudes of the modes lying in the critical subspace $\mathds{\widehat{T}}_{c}$, and a PDE for $\vpfield{u}_{s}$ for the evolution of the solution in the stable subspace $\mathds{T}_{s}$. Obviously $\mathds{C}^{m}$ is isomorphic to $\mathds{\widehat{T}}_{c}$. 
+
+Equation~\eqref{NS_CM_final} is now in the appropriate sort-after form for the application of center-manifold theory. The solution to equation~\eqref{NS_CM_final} may be denoted as ($\mathsfbi{x},\vpfield{u}_{s}$) which lies in a Hilbert space $\mathds{\widetilde{H}} = \mathds{C}^{m} \bigoplus \mathds{T}_{s}$, where $\mathds{C}^{m}$ and $\mathds{T}_{s}$ represent the center and stable subspaces of the linearized operator of the reformulated system. Evolution of the critical subspace variables is given by equation~\eqref{CM_xk} and, equation~\eqref{CM_stable} represents the evolution equation for the solution field in the stable subspace. The linear operators for the two subspaces are decoupled and both the non-linear operators $\mathcal{\widehat{F}}$ and $\mathcal{G}$ contain terms that are quadratic or higher in $\mathsfbi{x}$ and $\vfield{u}_{s}$.
+
+It is important to point out that due to the special structure of $\efield{v}^{\dagger}_{0}$ and the fact that $\lambda_{0} = 0$, the evolution equation for $x_{0}$ reduces to
+	\begin{eqnarray}
+			\label{CM_x0}
+			\dt {x}_{0} = 0. \nonumber
+\end{eqnarray}
+This is not only expected but necessary since, a variation of $x_{0}$ implies a variation of the Reynolds number, which was constant by construction.
+
+One may observe at this stage that while the reduction of the system to the final form given by equation~\eqref{NS_CM_final} required the extension of the original system and then subsequent deduction of the eigenstructure of the extended problem, the actual values of the extended variables in the eigenmodes (\ie $\zeta_{i}$ and $\zeta_{i}^{\dagger}$) play an almost trivial role. For all the direct eigenmodes $\zeta_{i}$ vanish for all $i>0$. The adjoint modes have $\zeta_{i}^{\dagger} \ne 0$, however, they are only important in projection terms of the type $\mathsfbi{\widehat{W}}^{H}\blbracket\blbracket\mathcal{N}\brbracket\brbracket$ where, the value of the extended variable vanishes for $\blbracket\blbracket\mathcal{N}\brbracket\brbracket$. Therefore $\zeta_{i}^{\dagger}$ plays no role in the projections either. Nonetheless, the consequence of considering the extended system are not trivial since the critical subspace now includes a non-trivial parameter mode $\efield{v}_{0}$. This mode does in fact play a role in $\mathcal{N}$ and  in the subsequent asymptotic evaluations of the center manifold.
+
+\subsection{Asymptotic Approximation}
+
+Using the Center-Manifold theorem, one may assume that $\vpfield{u}_{s}$ evolves as a graph over the critical subspace variables $\mathsfbi{x}$ such that $\vpfield{u}_{s} \sim \mathfrak{h}(\mathsfbi{x})$ where, $\mathfrak{h}$ is a function with the following properties,
+\begin{eqnarray}
+	\label{CM_approx_properties}
+	\mathfrak{h}: \mathds{C}^{m} \to \mathds{T}_{s}, & \nonumber \\
+	\mathfrak{h}(\mathsfbi{x}) \mapsto (\boldsymbol{0},\pfield{0}), & \hspace{5mm} \textit{for}\ \mathsfbi{x} = [0,0,\ldots,0] , \nonumber \\
+	\mathfrak{h}(\mathsfbi{x}) \sim \mathcal{O}(\mathsfbi{x}^{2}). & \nonumber
+\end{eqnarray}
+\ie $\mathfrak{h}$ maps the critical subspace in to the stable subspace, vanishes at the origin and, is asymptotic to $\mathcal{O}(\mathsfbi{x}^{2})$, as $\mathsfbi{x}$ approaches the origin. 
+The smoothness of $\mathfrak{h}$ depends on the smoothness of the nonlinear terms $\mathcal{\widehat{F}}$ and $\mathcal{G}$ and typically analiticity of the center-manifold can not be assumed apriori \citep{carr82,sijbrand85}. In the current work it is assumed that the nonlinear terms are smooth enough to not create any degeneracies up to the order of evaluation of the asymptotic approximations. $\mathfrak{h}$ may be substituted in to equation~\eqref{CM_stable} to obtain the graph equation,
+\begin{eqnarray}
+	\label{CM_graph_equation}
+	\left(\frac{\partial (\mathsfbi{B}\mathfrak{h})}{\partial \mathsfbi{x}}\right)\left(\mathsfbi{\widehat{\Lambda}}\mathsfbi{x} + \mathcal{\widehat{F}}(\mathsfbi{x},\mathfrak{h}) \right) = \mathcal{L}(\mathfrak{h}) + \mathcal{G}(\mathsfbi{x},\mathfrak{h}).
+\end{eqnarray}
+Equation~\eqref{CM_graph_equation} must be satisfied for the graph $\mathfrak{h}$ to be an invariant center-manifold of equation~\eqref{NS_CM_final}. In this case the graph $\mathfrak{h}$ represents the field $\vpfield{u}_{s}$ that lies in the infinite-dimensional subspace $\mathds{T}_{s}$. The matrix $\mathsfbi{B}$ in the derivative arises due to the special nature of the incompressibility equation.
+
+Equation~\eqref{CM_graph_equation} is in general a hard problem to solve. As an alternative one may approximate $\mathfrak{h}$ asymptotically via a power series in $\mathsfbi{x}$ as
+\begin{alignat}{4}
+	\label{CM_H_approx}
+		\mathfrak{h}(\mathsfbi{x}) = \sum_{a=0}^{m-1}\sum_{b=a}^{m-1} x_{a}x_{b}\vpfield{y}_{a,b} + %\sum_{a=0}^{m-1}\sum_{b=a}^{m-1} \sum_{c=b}^{m-1} x_{a}x_{b}x_{c}\vpfield{y}_{a,b,c} +
+		 \mathcal{O}(\mathsfbi{x}^{3}),
+\end{alignat}
+where the various $\vecyp$'s represent the (\emph{time independent}) velocity and pressure fields associated with the corresponding coefficients of $\mathsfbi{x}$ in the power series, \ie\ $\vecyp_{0,0} = (\vfield{y},\pfield{p})_{0,0}$ \textit{etc}. The power series for $\mathfrak{h}$ may be substituted into equation~\eqref{CM_graph_equation} and the expressions for the various powers of the terms may be collected to obtain an equation governing each field $\vecyp$.
+
+Before writing the an explicit expressions for the solutions a key feature of the approximation is highlighted with an example. Suppose one is only interested in a second-order approximation of $\mathfrak{h}$. We know that $\mathfrak{h} \sim \mathcal{O}(\mathsfbi{x}^{2})$ which implies $\partial \mathfrak{h}/\partial \mathsfbi{x} \sim \mathcal{O}(\mathsfbi{x})$. Therefore the first term on the LHS $(\partial \mathfrak{h}/\partial \mathsfbi{x})\mathsfbi{\widehat{\Lambda}}\mathsfbi{x} \sim \mathcal{O}(\mathsfbi{x}^{2})$ and will have contributions at second order. The contributing terms however, are all linear in $\mathbb{y}$. The second term on the LHS is at least of $\mathcal{O}(\mathsfbi{x}^{3})$, \ie $(\partial \mathfrak{h}/\partial \mathsfbi{x})\mathcal{\widehat{F}}(\mathsfbi{x},\mathfrak{h}) \sim \mathcal{O}(\mathsfbi{x}^{3})$, since $\mathcal{\widehat{F}}(x,\mathfrak{h})$ is atleast quadratic in $\mathsfbi{x}$. Hence it does not contribute at second order. On the RHS, the first term $\mathcal{L}(\mathfrak{h}) \sim \mathcal{O}(\mathsfbi{x}^{2})$ since $\mathcal{L}$ only operates on $\mathbb{y}$ and does not change the order of $\mathsfbi{x}$. Again, the resulting expressions are all linear in $\mathbb{y}$. The second term on the RHS needs a bit more consideration. Since $\mathcal{G}(\mathsfbi{x},\mathfrak{h})$ was originally quadratic, it will have three types of expressions -- quadratic terms of the type $\mathsfbi{x}\cdot\mathsfbi{x}$, quadratic terms of the type $\mathfrak{h}\cdot\mathfrak{h}$, and mixed quadratic terms of the type $\mathsfbi{x}\cdot\mathfrak{h}$. Clearly, $\mathfrak{h}\cdot\mathfrak{h} \sim \mathcal{O}(\mathsfbi{x}^{4})$ and $\mathsfbi{x}\cdot\mathfrak{h} \sim \mathcal{O}(\mathbb{x}^{3})$. Thus the only second order terms that arise are due to the terms originally of the type $\mathsfbi{x}\cdot\mathsfbi{x}$. These terms however are independent of $\mathbb{y}$, since they multiply the eigenvectors of the critical subspace. Thus at second order we have no non-linearities in $\mathbb{y}$ and all equations for the unknown fields $\mathbb{y}$ are inhomogeneous linear equations. This feature is not restricted to second order. At all orders the resulting equations for $\mathbb{y}$ are inhomogeneous linear equations and thus the highly nonlinear problem for $\mathfrak{h}$ is reduced to a series of linear problems for $\mathbb{y}$ when approximating as a power series in $\mathsfbi{x}$. This is perhaps not immediately obvious at the onset however, it is a general feature of asymptotic power series approximations and is perfectly analogous to the case of asymptotic center-manifold approximations for systems described by ODEs, where one obtains a series of linear equations for the coefficients of the various powers of the critical variables. With a slight abuse of terminology, the various fields $\vpfield{y}$ may indeed be considered the infinite-dimensional ``coefficients'' of the terms in power series in $\mathsfbi{x}$. 
+
+After substitution of the asymptotic approximation~\eqref{CM_H_approx} into the graph equation~\eqref{CM_graph_equation} and performing the algebraic manipulation to collect similar terms together, one obtains the following expressions for the second order approximations
+\begin{equation}
+	\label{second_order_expressions}
+	\begin{aligned}
+		[(\lambda_{i} + \lambda_{j})\mathsfbi{B} -  \mathcal{L}]\vpfield{y}_{i,j} = &
+		%
+		-\mathsfbi{Q}\blbracket (\invRec\nabla^{2}\vfield{v}_{j})\delta_{i,0}\brbracket \\
+		%
+		 & +\mathsfbi{Q}\blbracket (\vfield{v}_{i}\bcdot\nabla\vfield{v}_{j}) \delta_{i,j}\brbracket \\
+		%
+		& -\mathsfbi{Q}\blbracket\vfield{v}_{i}\bcdot\nabla\vfield{v}_{j}
+		%	
+		+\vfield{v}_{j}\bcdot\nabla\vfield{v}_{i}
+		%
+		\brbracket,
+	\end{aligned}  
+\end{equation}
+for $i,j \in 0\ldots (m-1), \  j\ge i$, where, $\delta_{i,j}$ is the Kronecker-Delta function. Recalling that $\vpfield{y}\in\mathds{T}_{s}$, it is appropriate to include a projection operator $\mathsfbi{P}^{\obliquesymbol{}} = (\mathsfbi{I} - \mathsfbi{V}\mathsfbi{W}^{H}\mathsfbi{B})$ in the final expressions to ensure that $\vpfield{y}$ lies in the prescribed invariant subspace. The inherent structure of the problem is obvious. If the second-order inhomogeneous term is generically represented as $\vpfield{f}_{i,j}$, one may represent the various solutions as
+\begin{eqnarray}
+	\label{general_second_order_expression}
+	\begin{aligned}
+		\vpfield{y}_{i,j} &= \mathcal{R}_{s}(\lambda_{i} + \lambda_{j})\vpfield{f}_{i,j}; &i,j \in 0\ldots (m-1), \  j\ge i, && \\
+		% 
+		\mathcal{R}_{s}(\omega) &= \mathsfbi{P}^{\obliquesymbol{}}[\omega\mathsfbi{B} -  \mathcal{L}]^{-1}. &  &&
+	\end{aligned}
+\end{eqnarray}
+Here $\mathcal{R}_{s}(\omega)$ may be interpreted as the restricted resolvent operator. The structure persists at higher orders of approximation so that the third order approximation may be written as 
+\begin{equation}
+	\label{general_higher_order_expression}
+	\begin{aligned}
+		\vpfield{y}_{i,j,k} &= \mathcal{R}_{s}(\omega_{i,j,k})\vpfield{f}_{i,j,k}; 
+		& \omega_{i,j,k} = \lambda_{i} + \lambda_{j} + \lambda_{k}, 		&&
+	\end{aligned}
+\end{equation}
+and so on, where $\vpfield{f}$ includes contributions from solution fields $\vpfield{y}$ evaluated at lower orders. Obviously this generalizes to any finite dimension $m$ of the critical subspace. However, the number of terms at each order rises rapidly as $m$ increases. The inhomogeneous term $\vpfield{f}$ depends on the structure of the nonlinearity and becomes increasingly cumbersome at higher orders of approximations. It is likely that a general structure may be found for the non-linear terms in $\vpfield{f}$ as well, however, that has not been attempted in the current work. 
+
+In general the resolvent operator of a linear system has poles in the complex plane at the points corresponding to the eigenvalues of the linear system. In this case, the linear operator in question is the restriction of the original operator to the stable subspace. Therefore all the poles of the restricted resolvent lie in the left half of the complex plane, excluding the imaginary axis. Or more generally, no poles of the restricted resolvent lie along the imaginary axis. On the other hand, the angular frequency $\omega$ in equations~\eqref{general_second_order_expression} and \eqref{general_higher_order_expression} always lies on the imaginary axis since it is comprised of summations of the integer multiples of the critical angular frequencies. Hence equations~\eqref{general_second_order_expression} and \eqref{general_higher_order_expression} are never singular. The possibility of singularity of the full resolvent operator is associated with the appearance of secular terms when dealing with multiple time-scale expansions \citep{bender99}, or with the generation of higher-order terms when evaluating normal forms \citep{wiggins03,guckenheimer83,coullet83,haragus11,carini15}. In the current case, the question of resonance never arises.
+
+Once $\mathfrak{h}$ is evaluated to the desired order, it may be substituted back in to the expression for $\mathcal{\widehat{F}}$ in equation~\eqref{CM_xk} and the result is a set of ``amplitude equations'' for the extended system. Note that these are slightly different from the Stuart-Landau equations which usually refer to the slowly evolving part of the mode in question, derived usually through an assumption of scale separation \citep{newell69,cross09,sipp07}. Here no such separation of time scales has been assumed and the amplitudes include the ``fast'' oscillatory behavior as well as any slow modulation that may emerge. To distinguish, the equations will be refered to as the center-manifold amplitude equations, with the variables $x_{i}$ naturally corresponding to the amplitudes of the modes in the center-manifold. 
+
+$\mathcal{\widehat{F}}$ may be written as individual components, $\mathcal{\widehat{F}}_{k} = \langle\efield{v}^{\dagger}_{k},\blbracket\blbracket\mathcal{N}(\mathsfbi{x},\mathfrak{h})\brbracket\brbracket\rangle$. Recall that that $\dt{x}_{0} = 0$, so only $k\in1,\ldots,(m-1)$ is relevant. In the subsequent expressions the ceiling brackets are dropped due to the relation, $\langle\efield{v}^{\dagger}_{k},\blbracket\blbracket\mathcal{N}\brbracket\brbracket\rangle = \langle\vfield{v}^{\dagger}_{k},\mathcal{N}\rangle$, where $\vfield{v}^{\dagger}_{k}$ is now the velocity field of the $k^{th}$ adjoint eigenvector of the \emph{standard} problem. Assuming a second-order approximation for $\mathfrak{h}$ has been evaluated, this results in the following expression for the center-manifold equations
+\begin{equation}
+	\label{extended_amplitude_equations}
+	\begin{aligned}
+		\dt{x}_{k} =& \lambda_{k}x_{k}  + \mathcal{\widehat{F}}_{k}^{(2)} + \mathcal{\widehat{F}}_{k}^{(3)} + \mathcal{O}(\mathsfbi{x^{4}}),
+	\end{aligned}
+\end{equation}
+for $k\in 1,\ldots,(m-1)$. Here, $\mathcal{\widehat{F}}_{k}^{(2)}$ and $\mathcal{\widehat{F}}_{k}^{(3)}$ are the second and third order nonlinear terms respectively for the $k^{th}$ center-manifold amplitude equation, defined as,
+\begin{subequations}
+	\label{amplitude_second_oder}
+	\begin{eqnarray}
+		\label{amplitude_f2}
+		\mathcal{\widehat{F}}_{k}^{(2)} = &&\left\lbrace
+		\begin{aligned}
+		& -\sum_{i=0}^{m-1}\sum_{j=i}^{m-1} x_{i}x_{j}\invRec\langle\vfield{v}^{\dagger}_{k}, \nabla^{2}\vfield{v}_{j}\rangle\delta_{i,0} \\
+		%
+		& - \sum_{i=0}^{m-1}\sum_{j=0}^{m-1} x_{i}x_{j}\langle\vfield{v}^{\dagger}_{k}, \vfield{v}_{i}\bcdot\nabla\vfield{v}_{j}\rangle,
+	\end{aligned} \right. \\
+	%%
+	\label{amplitude_f3}
+	\mathcal{\widehat{F}}_{k}^{(3)} = &&\left\lbrace
+	\begin{aligned}
+			& -\sum_{i=0}^{m-1}\sum_{a=0}^{m-1}\sum_{b=a}^{m-1} x_{i}x_{a}x_{b}\invRec\langle\vfield{v}^{\dagger}_{k}, \nabla^{2}\vfield{y}_{a,b}\rangle\delta_{i,0} \\
+			%
+			& -\sum_{i=0}^{m-1}\sum_{a=0}^{m-1}\sum_{b=a}^{m-1} x_{i}x_{a}x_{b}\langle\vfield{v}^{\dagger}_{k}, \vfield{v}_{i}\bcdot\nabla\vfield{y}_{a,b}\rangle \\
+			%
+			& -\sum_{i=0}^{m-1}\sum_{a=0}^{m-1}\sum_{b=a}^{m-1} x_{a}x_{b}x_{i}\langle\vfield{v}^{\dagger}_{k}, \vfield{y}_{a,b}\bcdot\nabla\vfield{v}_{i}\rangle.
+		\end{aligned} \right. 
+	\end{eqnarray}	
+\end{subequations}
+Equation~\eqref{extended_amplitude_equations} contains terms of the type $(x_{0})^{p}, \ p\ge2$. Since $x_{0}$ represents the parameter variation these terms are constant once the parameter value has been chosen and in effect act as inhomogeneous terms for the center-manifold equations. 
+
+It is important to highlight the key aspect of the procedure which considers the extended problem for the application of the center-manifold theorem. If one proceeds with the standard problem without the extended critical subspace, then equation~\eqref{CM_graph_equation} is still valid for the standard problem, but only at the bifurcation point. At this stage, the complexity of the problem for the solution of the graph equation is not significantly different whether one considers the standard or the extended problem to derive the graph equation. The graph equation is for the solution lying in the stable subspace and, as has been pointed out, the subspace expansion only affects the critical subspace and not the stable subspace. Therefore $\mathfrak{h}$ needs to be approximated formally as an asymptotic expansion regardless. The difference arises when one considers problems that are perturbed slightly away from the bifurcation point. Now the asymptotic solutions obtained for the standard problem are no longer valid and one must consider a second series expansion (in the bifurcation parameter) to evaluate the continuation of the previously calculated asymptotic terms. In addition to the added complexity, this has the unaesthetic quality of considering a series on top of an already trucated series. Regardless of one's aesthetic inclination, this added complexity is clearly avoided when one considers the extended problem which already includes the effects of parameter variation. An alternate way around the problem of double series expansion has been used by \cite{haragus11} wherin one starts with the expected normal form of the reduced problem, deduced from the spectrum of the problem at bifurcation and then evaluates the asymptotic terms satisfying the normal form. This can be done for simple bifurcation problems however, for more complicated bifurcation problems in higher codimensions one may not be able to assume the normal form apriori. Additionally, more often than not the whole point of such analysis is to deduce the type of dynamics that are induced by the bifurcation, and not start with an apriori assumption of the dynamics. 
+
+Hence, the method derived here with the extended problem shines when considering center-manifold problems that have been perturbed away from the bifurcation point. It can be considered as a way of incorporating the double asymptotic series expansion (which is formally necessary when considering the standard problem) into a single asymptotic expansion, without an apriori assumption of the normal form of the reduced dynamics. The cost of unifying the two asymptotic expansions is to consider a larger critical subspace. 
+
+
+
+
+
+
+
+
+

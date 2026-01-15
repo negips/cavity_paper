@@ -1,0 +1,237 @@
+\begin{thebibliography}{}
+
+\bibitem[{\AA}kervik et~al., 2006]{akervik06}
+{\AA}kervik, E., Brandt, L., Henningson, D.~S., Hœpffner, J., Marxen, O., and
+  Schlatter, P. (2006).
+\newblock Steady solutions of the {N}avier-{S}tokes equations by selective
+  frequency damping.
+\newblock {\em Physics of Fluids}, 18(6):068102.
+
+\bibitem[Barkley, 2006]{barkley06}
+Barkley, D. (2006).
+\newblock Linear analysis of the cylinder wake mean flow.
+\newblock {\em Europhysics Letters ({EPL})}, 75(5):750--756.
+
+\bibitem[Bender and Orzag, 1999]{bender99}
+Bender, C.~M. and Orzag, S.~A. (1999).
+\newblock {\em Advanced Mathematical Methods for Scientists and Engineers}.
+\newblock Springer Science \& Business Media New York.
+
+\bibitem[Carini et~al., 2015]{carini15}
+Carini, M., Auteri, F., and Giannetti, F. (2015).
+\newblock Centre-manifold reduction of bifurcating flows.
+\newblock {\em Journal of Fluid Mechanics}, 767:109–145.
+
+\bibitem[Carr, 1982]{carr82}
+Carr, J. (1982).
+\newblock {\em Applications of centre manifold theory}, volume~35.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Carr and Muncaster, 1983a]{carr83b}
+Carr, J. and Muncaster, R.~G. (1983a).
+\newblock The application of centre manifolds to amplitude expansions. i.
+  ordinary differential equations.
+\newblock {\em Journal of Differential Equations}, 50(2):260--279.
+
+\bibitem[Carr and Muncaster, 1983b]{carr83}
+Carr, J. and Muncaster, R.~G. (1983b).
+\newblock The application of centre manifolds to amplitude expansions. ii.
+  infinite dimensional problems.
+\newblock {\em Journal of differential equations}, 50(2):280--288.
+
+\bibitem[Chicone, 2006]{chicone06}
+Chicone, C.~C. (2006).
+\newblock {\em Ordinary differential equations with applications}, volume~34.
+\newblock Springer.
+
+\bibitem[Coullet and Spiegel, 1983]{coullet83}
+Coullet, P.~H. and Spiegel, E.~A. (1983).
+\newblock Amplitude equations for systems with competing instabilities.
+\newblock {\em SIAM Journal on Applied Mathematics}, 43(4):776--821.
+
+\bibitem[Cross and Greenside, 2009]{cross09}
+Cross, M. and Greenside, H. (2009).
+\newblock {\em Pattern Formation and Dynamics in Nonequilibrium Systems}.
+\newblock Cambridge University Press.
+
+\bibitem[Deville et~al., 2002]{deville02}
+Deville, M.~O., Fischer, P.~F., and Mund, E.~H. (2002).
+\newblock {\em High-Order Methods for Incompressible Fluid Flow}.
+\newblock Number~9 in Cambridge Monographs on Applied and Computational
+  Mathematics. Cambridge University Press.
+
+\bibitem[Dušek et~al., 1994]{dusek94}
+Dušek, J., Gal, P.~L., and Fraunié, P. (1994).
+\newblock A numerical and theoretical study of the first {H}opf bifurcation in
+  a cylinder wake.
+\newblock {\em Journal of Fluid Mechanics}, 264:59–80.
+
+\bibitem[Fischer et~al., 2008]{nek5000}
+Fischer, P.~F., Lottes, J.~W., and Kerkemeier, S.~G. (2008).
+\newblock Nek5000 web page.
+\newblock \url{http://nek5000.mcs.anl.gov}.
+
+\bibitem[Fujimura, 1991]{fujimara91}
+Fujimura, K. (1991).
+\newblock Methods of centre manifold and multiple scales in the theory of
+  weakly nonlinear stability for fluid motions.
+\newblock {\em Proceedings: Mathematical and Physical Sciences},
+  434(1892):719--733.
+
+\bibitem[Fujimura, 1997]{fujimura97}
+Fujimura, K. (1997).
+\newblock Centre manifold reduction and the {S}tuart-{L}andau equation for
+  fluid motions.
+\newblock {\em Proceedings of the Royal Society of London. Series A:
+  Mathematical, Physical and Engineering Sciences}, 453(1956):181--203.
+
+\bibitem[Gianetti and Luchini, 2007]{giannetti07}
+Gianetti, F. and Luchini, P. (2007).
+\newblock Structural sensitivity of the first instability of the cylinder wake.
+\newblock {\em Journal of Fluid Mechanics}, 581:167–197.
+
+\bibitem[Guckenheimer and Holmes, 1983]{guckenheimer83}
+Guckenheimer, J. and Holmes, P. (1983).
+\newblock {\em Nonlinear Oscillations, Dynamical Systems, and Bifurcations of
+  Vector Fields}.
+\newblock Springer Science \& Business Media New York.
+
+\bibitem[Guckenheimer and Knobloch, 1983]{guckenheimer83b}
+Guckenheimer, J. and Knobloch, E. (1983).
+\newblock Nonlinear convection in a rotating layer: amplitude expansions and
+  normal forms.
+\newblock {\em Geophysical \& Astrophysical Fluid Dynamics}, 23(4):247--272.
+
+\bibitem[Haragus and G\'{e}rard, 2011]{haragus11}
+Haragus, M. and G\'{e}rard, I. (2011).
+\newblock {\em Local Bifurcations, Center Manifolds, and Normal Forms in
+  Infinite-Dimensional Dynamical Systems}.
+\newblock Springer-Verlag New York.
+
+\bibitem[Knobloch and Guckenheimer, 1983]{knobloch83}
+Knobloch, E. and Guckenheimer, J. (1983).
+\newblock Convective transitions induced by a varying aspect ratio.
+\newblock {\em Physical Review A}, 27(1):408.
+
+\bibitem[Landau, 1944]{landau52}
+Landau, L.~D. (1944).
+\newblock On the problem of turbulence.
+\newblock In HAAR, D.~T., editor, {\em Collected Papers of L.D. Landau}, pages
+  387--391. Pergamon.
+
+\bibitem[Maday and Patera, 1989]{maday89}
+Maday, Y. and Patera, A.~T. (1989).
+\newblock Spectral element methods for the incompressible {N}avier-{S}tokes
+  equations.
+\newblock In {\em State-of-the-art surveys on computational mechanics}, pages
+  71--143. American Society of Mechanical Engineers, New York.
+
+\bibitem[Manti{\v{c}}-Lugo et~al., 2015]{mantivc15}
+Manti{\v{c}}-Lugo, V., Arratia, C., and Gallaire, F. (2015).
+\newblock A self-consistent model for the saturation dynamics of the vortex
+  shedding around the mean flow in the unstable cylinder wake.
+\newblock {\em Physics of Fluids}, 27(7).
+
+\bibitem[Meliga, 2017]{meliga17}
+Meliga, P. (2017).
+\newblock Harmonics generation and the mechanics of saturation in flow over an
+  open cavity: a second-order self-consistent description.
+\newblock {\em Journal of Fluid Mechanics}, 826:503--521.
+
+\bibitem[Meliga and Chomaz, 2011]{meliga11}
+Meliga, P. and Chomaz, J.-M. (2011).
+\newblock An asymptotic expansion for the vortex-induced vibrations of a
+  circular cylinder.
+\newblock {\em Journal of Fluid Mechanics}, 671:137–167.
+
+\bibitem[Meliga et~al., 2012]{meliga12}
+Meliga, P., Gallaire, F., and Chomaz, J.-M. (2012).
+\newblock A weakly nonlinear mechanism for mode selection in swirling jets.
+\newblock {\em Journal of Fluid Mechanics}, 699:216–262.
+
+\bibitem[Negi, 2019]{negiphd}
+Negi, P. (2019).
+\newblock {\em Stability and transition in pitching wings}.
+\newblock PhD thesis, KTH Royal Institute of Technology.
+
+\bibitem[Negi et~al., 2020]{negi20}
+Negi, P.~S., Hanifi, A., and Henningson, D.~S. (2020).
+\newblock On the linear global stability analysis of rigid-body motion
+  fluid–structure-interaction problems.
+\newblock {\em Journal of Fluid Mechanics}, 903:A35.
+
+\bibitem[Newell and Whitehead, 1969]{newell69}
+Newell, A.~C. and Whitehead, J.~A. (1969).
+\newblock Finite bandwidth, finite amplitude convection.
+\newblock {\em Journal of Fluid Mechanics}, 38(2):279–303.
+
+\bibitem[Patera, 1984]{patera84}
+Patera, A.~T. (1984).
+\newblock A spectral element method for fluid dynamics: Laminar flow in a
+  channel expansion.
+\newblock {\em Journal of Computational Physics}, 54(3):468 -- 488.
+
+\bibitem[Pier, 2002]{pier02}
+Pier, B. (2002).
+\newblock On the frequency selection of finite-amplitude vortex shedding in the
+  cylinder wake.
+\newblock {\em Journal of Fluid Mechanics}, 458:407–417.
+
+\bibitem[Provansal et~al., 1987]{provansal87}
+Provansal, M., Mathis, C., and Boyer, L. (1987).
+\newblock Bénard-von {K}ármán instability: transient and forced regimes.
+\newblock {\em Journal of Fluid Mechanics}, 182:1–22.
+
+\bibitem[Roberts, 1997]{roberts97}
+Roberts, A. (1997).
+\newblock Low-dimensional modelling of dynamics via computer algebra.
+\newblock {\em Computer Physics Communications}, 100(3):215--230.
+
+\bibitem[Roberts, 1989]{roberts89}
+Roberts, A.~J. (1989).
+\newblock The utility of an invariant manifold description of the evolution of
+  a dynamical system.
+\newblock {\em SIAM Journal on Mathematical Analysis}, 20(6):1447--1458.
+
+\bibitem[Sijbrand, 1985]{sijbrand85}
+Sijbrand, J. (1985).
+\newblock Properties of center manifolds.
+\newblock {\em Transactions of the American Mathematical Society},
+  289(2):431--469.
+
+\bibitem[Sipp and Lebedev, 2007]{sipp07}
+Sipp, D. and Lebedev, A. (2007).
+\newblock Global stability of base and mean flows: a general approach and its
+  applications to cylinder and open cavity flows.
+\newblock {\em Journal of Fluid Mechanics}, 593:333–358.
+
+\bibitem[Stewart, 2002]{stewart02}
+Stewart, G.~W. (2002).
+\newblock A {K}rylov--{S}chur algorithm for large eigenproblems.
+\newblock {\em SIAM Journal on Matrix Analysis and Applications},
+  23(3):601--614.
+
+\bibitem[Stuart, 1958]{stuart58}
+Stuart, J.~T. (1958).
+\newblock On the non-linear mechanics of hydrodynamic stability.
+\newblock {\em Journal of Fluid Mechanics}, 4(1):1–21.
+
+\bibitem[Stuart, 1960]{stuart60}
+Stuart, J.~T. (1960).
+\newblock On the non-linear mechanics of wave disturbances in stable and
+  unstable parallel flows part 1. the basic behaviour in plane poiseuille flow.
+\newblock {\em Journal of Fluid Mechanics}, 9(3):353–370.
+
+\bibitem[Watson, 1960]{watson60}
+Watson, J. (1960).
+\newblock On the non-linear mechanics of wave disturbances in stable and
+  unstable parallel flows part 2. the development of a solution for plane
+  {P}oiseuille flow and for plane {C}ouette flow.
+\newblock {\em Journal of Fluid Mechanics}, 9(3):371–389.
+
+\bibitem[Wiggins, 2003]{wiggins03}
+Wiggins, S. (2003).
+\newblock {\em Introduction to Applied Nonlinear Dynamical Systems and Chaos}.
+\newblock Springer-Verlag New York.
+
+\end{thebibliography}

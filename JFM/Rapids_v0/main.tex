@@ -1,0 +1,115 @@
+%\documentclass[lineno]{jfm}
+\documentclass[lineno]{JFM-FLM_Au}
+
+%\usepackage{showframe}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{placeins}
+\usepackage{subcaption}
+%\usepackage[bb=stix,bfbb]{mathalpha}
+\usepackage{dsfont}
+%\usepackage[T1]{fontenc}
+\usepackage{accents}
+%\usepackage{tikz}
+
+\graphicspath{{imgs/}}
+
+\newcommand*{\dt}[1]{%
+	\accentset{\mbox{\large\bfseries .}}{#1}}
+
+% Velocity field
+\newcommand{\vfield}[1]{
+	\boldsymbol{#1}
+}
+% Pressure field
+\newcommand{\pfield}[1]{
+	\mathrm{#1}
+}
+% Inverse
+\newcommand{\inv}[1]{
+	\mathrm{#1^{-1}}
+}
+
+\def\vecU{\boldsymbol{U}}
+\def\vecUb{\vfield{U^{0}}}
+\def\vecPb{\pfield{P^{0}}}
+\def\vecu{\vfield{u}}
+\def\vecv{\vfield{v}}
+\def\vecw{\vfield{w}}
+\def\vecy{\vfield{y}}
+\def\vecubar{\bar{\vecu}}
+\def\vecvbar{\bar{\vecv}}
+\def\vecwbar{\bar{\vecw}}
+\def\vecybar{\bar{\vecy}}
+\def\bcdot{\boldsymbol{\cdot}}
+\def\ie{\textit{i.e.} }
+\def\rhs{{r.h.s} }
+\def\Lu{\mathbf{L}}
+\def\Nu{\mathbf{N}}
+\def\invRec{\inv{\Rey_{c}}}
+\def\Rey{\mathrm{Re}}
+
+\def\parv{z}
+\def\vecparv{\mathbf{\parv}}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\lefttitle{P.S. Negi}
+\righttitle{Journal of Fluid Mechanics}
+
+\title{A model for limit-cycle switching in open cavity flow}
+
+\author{Prabal S. Negi}
+
+\affiliation{Okinawa Institute of Science and Technology Graduate University, Onna, Okinawa 904-0495, Japan}
+
+\corresau{Prabal S. Negi, \email{prabal.negi@oist.jp}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	A reduced mathematical model for the flow in an open cavity is presented. The reduction is based on the center manifold theory applied to a perturbation of the original system which allows for a co-dimension two bifurcation point. The model exhibits many of the key characteristics observed in the flow dynamics including unstable quasi-periodic edge states as well as switching of limit cycles with parameter variations. It illuminates the mechanism behind the exchange of stability of the limit cycles and also predicts the bifurcation points where such stability changes occur.
+\end{abstract}
+
+\begin{keywords}
+\end{keywords}
+
+%{\bf MSC Codes }  {\it(Optional)} Please enter your MSC Codes here
+
+\input{intro}
+\input{cavity}
+
+\FloatBarrier
+
+%\bibliographystyle{jfm}
+%\bibliography{references}
+
+\begin{bmhead}[Acknowledgements.]
+	The author is grateful for the computational resources and support provided by the Scientific Computing and Data Analysis section of Research Support Division at OIST.
+\end{bmhead}
+	
+\begin{bmhead}[Funding.]
+The research was supported by the Okinawa Institute of Science and Technology Graduate	University (OIST) with subsidy funding from the Cabinet Office, Government of Japan.
+\end{bmhead}
+
+
+
+\bibliographystyle{jfm}
+\bibliography{references}
+
+%Use of the above commands will create a bibliography using the .bib file. Shown below is a bibliography built from individual items.
+
+
+
+
+%% End of file `jfm.bib'.
+
+
+\end{document}

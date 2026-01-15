@@ -1,0 +1,77 @@
+\appendix
+
+\section{Center-Manifold Coefficients} 
+\label{AppendixA}
+
+Table~\ref{tab:coeffs_x1} reports the evaluated coefficients for the different polynomial terms in the center-manifold amplitude equations for the Hopf bifurcations in the cylinder wake and for the flow in an open cavity. The reported coefficient are for $\dt{x}$ and one obtains the complex conjugated terms for $\dt{x}^{*}$ up to an accurary of $10^{-8}$, where numerical accuracy and solver tolerances cause a violation of the complex conjugation property.
+
+\begin{table*}
+	\centering
+	\caption{Coefficients of polynomial terms for $\dot{x}_{1}$ obtained numerically for the two cases. }
+	\begin{tabular}{c | c | c}
+		Polynomial Terms  & Cylinder Wake		                  & Open Cavity\\
+		\hline\hline
+		$x_{0}$           & $0.0 + 0.0i$ 				      & $0.0 + 0.0i$ 			     \\
+		$x_{1}$           & $0.0 + 0.7455i$ 				& $0.0 + 7.495i$   		     \\
+		$x_{2}$           & $0.0 + 0.0i$ 					& $0.0 + 0.0i$ 			     \\
+            $x_{0}x_{0}$      & $(+3.640 + 2.291i)\times10^{-8}$ 	      & $(+11.72 - 6.618i)\times10^{-2}$ \\
+		$x_{0}x_{1}$      & $(+1.976 + 0.698i)\times10^{-1}$ 		& $(+8.345 + 7.238i)\times10^{-1}$ \\
+		$x_{0}x_{2}$      & $(+6.388 + 4.616i)\times10^{-3}$ 		& $(-1.544 + 5.471i)\times10^{-2}$ \\
+		$x_{1}x_{1}$      & $(-1.479 - 0.211i)\times10^{-11}$ 	& $(+18.42 - 4.701i)\times10^{-1}$ \\
+		$x_{1}x_{2}$      & $(-1.306 + 1.290i)\times10^{-10}$ 	& $(+2.268 - 3.955i)\times10^{+0}$ \\
+            $x_{2}x_{2}$      & $(+0.380 - 1.652i)\times10^{-11}$ 	& $(+1.007 + 4.994i)\times10^{-1}$ \\
+            $x_{0}x_{0}x_{0}$	& $(+2.954 + 1.373i)\times10^{-8}$        & $(+9.656 - 5.478i)\times10^{-2}$ \\ 
+            $x_{0}x_{0}x_{1}$	& $(+7.264 - 4.787i)\times10^{-2}$        & $(+3.188 + 2.514i)\times10^{-1}$ \\
+            $x_{0}x_{0}x_{2}$ & $(+4.477 - 1.482i)\times10^{-3}$        & $(-7.922 + 2.635i)\times10^{-2}$ \\
+            $x_{0}x_{1}x_{1}$ & $(-3.854 - 3.090i)\times10^{-9}$        & $(+12.94 - 6.695i)\times10^{-1}$ \\
+            $x_{0}x_{1}x_{2}$ & $(+0.711 + 2.542i)\times10^{-9}$        & $(+0.898 - 1.946i)\times10^{+1}$ \\
+            $x_{0}x_{2}x_{2}$ & $(+1.077 + 0.492i)\times10^{-10}$       & $(+2.234 - 2.946i)\times10^{-1}$ \\
+            $x_{1}x_{1}x_{1}$ & $(+1.615 - 2.904i)\times10^{-5}$        & $(-3.701 + 3.134i)\times10^{+0}$ \\
+            $x_{1}x_{1}x_{2}$ & $(-2.526 + 8.010i)\times10^{-3}$        & $(-5.744 + 3.425i)\times10^{+2}$ \\
+            $x_{1}x_{2}x_{2}$ & $(+0.973 - 3.380i)\times10^{-5}$        & $(-9.844 + 3.445i)\times10^{+1}$ \\
+            $x_{2}x_{2}x_{2}$ & $(-2.308 -5.938i)\times10^{-7}$        & $(-4.613 + 6.681i)\times10^{+0}$ \\
+		\hline\hline
+	\end{tabular} 
+	\label{tab:coeffs_x1}
+\end{table*}
+
+%\begin{table}[]
+%	\centering
+%	\caption{Coefficients of polynomial terms for $\dot{x}_{1}$ for the flow in an open cavity. }
+%	\begin{tabular}{c | c }
+%			\hline\hline
+%			$x_{0}$ & $0.0 + 0.0i$ 						\\
+%			$x_{1}$ & $0.0 + 0.0i$ 						\\
+%			$x_{2}$ & $0.0 - 0.7455i$ 				      \\
+%			$x_{0}x_{0}$ & $(+5.904 - 0.789i)\times10^{-10}$ 	\\
+%			$x_{0}x_{1}$ & $(+7.669 + 1.813i)\times10^{-3}$ 	\\
+%                  $x_{0}x_{2}$ & $(+1.976 - 0.698i)\times10^{-1}$ 	\\
+%			$x_{1}x_{1}$ & $(-1.068 + 0.597i)\times10^{-10}$ 	\\
+%			$x_{1}x_{2}$ & $(-0.469 - 1.239i)\times10^{-9}$ 	\\
+%			$x_{2}x_{2}$ & $(-9.075 + 5.828i)\times10^{-11}$ 	\\
+%                  $x_{0}x_{0}x_{0}$ & $(+4.654 + 0.221i)\times10^{-9}$  \\   
+%                  $x_{0}x_{0}x_{1}$ & $(+1.807 + 4.355i)\times10^{-3}$	\\
+%                  $x_{0}x_{0}x_{2}$ & $(+7.264 + 4.787i)\times10^{-2}$	\\
+%                  $x_{0}x_{1}x_{1}$ & $(-0.140 - 1.282i)\times10^{-8}$  \\   
+%                  $x_{0}x_{1}x_{2}$ & $(+0.702 - 1.177i)\times10^{-9}$	\\
+%                  $x_{0}x_{2}x_{2}$ & $(+6.000 + 4.535i)\times10^{-9}$	\\
+%                  $x_{1}x_{1}x_{1}$ & $(-2.889 - 1.638i)\times10^{-5}$	\\
+%                  $x_{1}x_{1}x_{2}$ & $(-1.001 + 1.536i)\times10^{-3}$	\\
+%                  $x_{1}x_{2}x_{2}$ & $(-1.317 - 4.176i)\times10^{-1}$	\\
+%                  $x_{2}x_{2}x_{2}$ & $(+1.696 + 0.353i)\times10^{-3}$  \\   
+%			\hline\hline
+%		\end{tabular} 
+%	\label{tab:cavity_coeffs_x1}
+%\end{table}
+
+
+
+\section{Bifurcation Algorithm}
+\label{AppendixB}
+
+The following describes the numerical procedure for obtaining the bifurcation point. 
+First three Reynolds numbers are selected, representing the parameter range and its mid-point for the search of the critical Reynolds number. Maximum growth rates $\sigma$ at the three points are determined using the Krylov-Schur method \citep{stewart02} for the spectral problem. Using the three points a quadratic relation is built for the Reynolds number as a function of the growth rate \ie, $\Rey(\sigma) = a + b\sigma + c\sigma^{2}$. The coefficients $a,b,c$, obtained through the spectral results obtained at the three points. An approximate prediction of the critical point is found using $\Rey(0) = a$. The fixed point solution and the spectral poblem is solved again to obtain $\sigma$ at the predicted $\Rey$. If the newly obtained growth rate $\sigma$ is greater than a specified tolerance, a new relation $Re(\sigma)$ is built using the smallest three growth rate values and the next prediction of the critical point is obtained.  The procedure is repeated till a required tolerance for the critical point is obtained. In the current work the tolerance of $\sigma<10^{-9}$ is used for the determination of the critical point, and the critical Reynolds number is found to be $\Rey_{c} = 46.30$ for the case of flow across a stationary cylinder and $\Rey_{c}=4131.33$ for the open cavity.
+
+
+
+
