@@ -18,7 +18,8 @@ mks    = 10       # markersize
 Rec    = 4.131331106555E+03
 Reci   = 1.0/Rec
 
-FOL    = "cavity_normal_form_pert/"
+#FOL    = "cavity_normal_form_pert/"
+FOL    = "cavity_normal_form_pert_O3/"
 nmodes = 6
 fnames = Vector{String}(undef,nmodes)
 for i in 1:nmodes
@@ -50,5 +51,5 @@ for ord in 1:OrdM
   G[ord] = copy(GO)
 end
 
-
+println("AmplitudeTerms.* Reading Done.")
 

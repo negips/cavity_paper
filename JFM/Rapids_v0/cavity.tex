@@ -49,7 +49,7 @@ where $^{\dagger}$ represents the complex-conjugated transpose and $\sigma$ is t
 
 One may evaluate not just the standard center manifold emanating from the fixed point of the new system, but also a parameter dependent (usually asymptotic) center manifold so that variations of Reynolds number can be obtained on a reduced representation of the system. Typically, one takes the inverse Reynolds number variation as a small parameter, $\inv{\Rey} = \invRec(1 - \epsilon)$, or some variation thereof, accounting for scaling \citep{sipp07,carini15,negi24}. In this case we would also like to consider the variation with respect to the newly introduced parameter $\sigma$. We would therefore consider a perturbation of this parameter as $\sigma = \sigma_{0} + \sigma'$, where $\sigma_{0} = -\mathfrak{R}(\lambda_{3,4})$.
 
-Parametric (and asymptotic) center manifold evaluation can be performed in multiple different ways depending on one's preference and style. One could consider power series expansions in the amplitudes of the center subspace modes and then augment the power series with additional polynomial terms to account for the additional parameter perturbations (here $\epsilon$  and $\sigma'$), as has been done in \cite{coullet83,carini15}. Alternately, one could consider extended systems, and include additional trivial equations for the parameter evolutions, thereby promoting parameter perturbations to intrinsic center subspace modes of the extended system. This is an often used trick for small dynamical systems, with some applications to larger systems as well \citep{mercer90,cox91,negi24,vizzaccaro24}. Recently, asymptotic expansions of spectral submanifolds of extended systems was performed in \cite{vizzaccaro24} in the context of external forcing. The consequences of system extension have been investigated to significant depth in the context of center manifolds in \cite{negi26}. The extended systems approach was taken here. The methodology is described here only conceptually. One may find detailed exposition of asymptotic evaluation of invariant manifolds in several works in the literature, see for example,  \cite{coullet83,wiggins03,roberts14,carini15,jain22,vizzaccaro24,negi24,negi26}.  
+Parametric (and asymptotic) center manifold evaluation can be performed in multiple different ways depending on one's preference and style. One could consider power series expansions in the amplitudes of the center subspace modes and then augment the power series with additional polynomial terms to account for the additional parameter perturbations (here $\epsilon$  and $\sigma'$), as has been done in \cite{coullet83,carini15}. Alternately, one could consider extended systems, and include additional trivial equations for the parameter evolutions, thereby promoting parameter perturbations to intrinsic center subspace modes of the extended system. This is an often used trick for small dynamical systems, with some applications to larger systems as well \citep{mercer90,cox91,negi24,vizzaccaro24}. Recently, asymptotic expansions of spectral submanifolds of extended systems was performed in \cite{vizzaccaro24} in the context of external forcing. The consequences of system extension have been investigated to significant depth in the context of center manifolds in \cite{negi26}. The extended systems approach was taken here. The methodology is described here only conceptually. One may find detailed exposition of asymptotic evaluation of invariant manifolds in several works in the literature, see for example,  \cite{coullet83,roberts97,wiggins03,carini15,jain22,vizzaccaro24,negi24,negi26}.  
 
 Briefly, the solution of equation~\eqref{eqn:compact_evolution2} restricted to the center manifold is assumed to be, $\vecubar(t) = \mathcal{Y}(\vecparv(t))$, where, $\vecparv$ is the vector of dimensionality equal to the dimensionality of the center subspace (of the extended system). The time evolution of $\vecparv$ is assumed to be, $\dt{\vecparv} = \mathcal{G}(\vecparv)$, where, $\mathcal{G}$ is the sought after reduced representation of the system dynamics. Both $\mathcal{Y}$ and $\mathcal{G}$ are expanded as a power series in $\vecparv$,
 \begin{align}
@@ -60,42 +60,67 @@ and their substitution into equation~\eqref{eqn:compact_evolution2} results in a
 Performing the above described procedure results in the normal form of the parametric center manifold obtained for the synthetic system,
 \begin{subequations}
 	\label{eqn:normal_form}
-	\begin{equation}
+	\begin{align}
 		\label{eqn:normal_form1}
-		\begin{aligned}
-				\dt{\parv_{1}} =& +(7.495\iota)\parv_{1} 
-				%
-				+ (0.835 + 0.724\iota)\parv_{1}\epsilon \\
-				%
-				& + (0.325 + 0.230\iota)\parv_{1}(\epsilon)^{2}
-				%
-				   - (0.004 - 0.001\iota)\parv_{1}\epsilon\sigma'  \\
-				%
-				& - (1553.8 + 342.5\iota)\parv_{1}|\parv_{3}|^{2}
-				%
-				  - (573.2 - 340.0\iota)\parv_{1}|\parv_{1}|^{2},
-			\end{aligned} 
-	\end{equation}
-	%
-	\begin{equation}
+			\dt{\parv_{1}} =& \left(g^{1}_{1} 
+			+ g^{1}_{1,3,4}|\parv_{3}|^{2} + 	g^{1}_{1,1,2}|\parv_{1}|^{2}\right)\parv_{1}, \\
+		%
 		\label{eqn:normal_form3}
-		\begin{aligned}
-			\dt{\parv_{3}} =& +(1.0\sigma' + 10.31\iota)\parv_{3} 
+			\dt{\parv_{3}} =& \left(g^{3}_{3}  
+			+ g^{3}_{3,3,4}|\parv_{3}|^{2}
 			%
-			+ (1.801 + 1.096\iota)\parv_{3}\epsilon \\
-			%
-			& + (0.631 + 0.395\iota)\parv_{3}(\epsilon)^{2}
-			%
-			- (0.005 - 0.001\iota)\parv_{3}\epsilon\sigma'  \\
-			%
-			& - (751.0 + 6.987\iota)\parv_{3}|\parv_{3}|^{2}
-			%
-			- (829.4 - 275.2\iota)\parv_{3}|\parv_{1}|^{2}.
-		\end{aligned}
-	\end{equation}
+			+ g^{3}_{1,2,3}|\parv_{1}|^{2}\right)\parv_{3},
+	\end{align}
 \end{subequations}
+where,
+\begin{align}
+	g^{1}_{1} =& 7.495\iota + (0.835 + 0.724\iota)\epsilon 
+	+ (0.325 + 0.230\iota)\epsilon^{2} 
+	- (0.004 - 0.001\iota)\epsilon\sigma', \nonumber \\
+	%
+	g^{3}_{3} =& (\sigma' + 10.31\iota) + (1.801 + 1.096\iota)\epsilon + (0.631 + 0.395\iota)\epsilon^{2} - (0.005 - 0.001\iota)\epsilon\sigma', \nonumber
+\end{align}
+\begin{align}
+	g^{1}_{1,1,2} = -573 + 340\iota;\hspace{0.5em} & g^{1}_{1,3,4} = -1553 - 342\iota; & g^{3}_{1,2,3} =- 829 + 275\iota;\hspace{0.5em} & g^{3}_{3,3,4} = -751 - 6.99\iota, \nonumber
+\end{align}
+%\begin{subequations}
+%	\label{eqn:normal_form}
+%	\begin{equation}
+%		\label{eqn:normal_form1}
+%		\begin{aligned}
+%				\dt{\parv_{1}} =& +(7.495\iota)\parv_{1} 
+%				%
+%				+ (0.835 + 0.724\iota)\parv_{1}\epsilon \\
+%				%
+%				& + (0.325 + 0.230\iota)\parv_{1}(\epsilon)^{2}
+%				%
+%				   - (0.004 - 0.001\iota)\parv_{1}\epsilon\sigma'  \\
+%				%
+%				& - (1553.8 + 342.5\iota)\parv_{1}|\parv_{3}|^{2}
+%				%
+%				  - (573.2 - 340.0\iota)\parv_{1}|\parv_{1}|^{2},
+%			\end{aligned} 
+%	\end{equation}
+%	%
+%	\begin{equation}
+%		\label{eqn:normal_form3}
+%		\begin{aligned}
+%			\dt{\parv_{3}} =& +(1.0\sigma' + 10.31\iota)\parv_{3} 
+%			%
+%			+ (1.801 + 1.096\iota)\parv_{3}\epsilon \\
+%			%
+%			& + (0.631 + 0.395\iota)\parv_{3}(\epsilon)^{2}
+%			%
+%			- (0.005 - 0.001\iota)\parv_{3}\epsilon\sigma'  \\
+%			%
+%			& - (751.0 + 6.987\iota)\parv_{3}|\parv_{3}|^{2}
+%			%
+%			- (829.4 - 275.2\iota)\parv_{3}|\parv_{1}|^{2}.
+%		\end{aligned}
+%	\end{equation}
+%\end{subequations}
 Here, $\parv_{1}$ refers to the amplitude corresponding to the $\widetilde{\lambda}_{1}$ mode and $\parv_{3}$ refers to the amplitude of the $\widetilde{\lambda}_{3}$ mode. The equations for $\parv_{2}$ and $\parv_{4}$ are the corresponding complex conjugates of equation~\ref{eqn:normal_form}. As mentioned earlier, $\epsilon$ is the perturbation parameter for the Reynolds number, defined using $\inv{\Rey} = \invRec(1 - \epsilon)$. If we consider $\sigma' = - \sigma_{0}$, the additional terms that were introduced to generate the synthetic system \eqref{eqn:compact_evolution2} vanish, 
-and one obtains the original system \eqref{eqn:compact_evolution1} that had a co-dimension one bifurcation point. The first term on the right hand side in equation~\eqref{eqn:normal_form3} becomes $(-0.092 + 10.31\iota)\parv_{3}$, which is precisely the $\lambda_{3}$ eigenvalue of the original system. Henceforth the value of $\sigma'=-\sigma_{0}$ is held fixed and it is treated simply as another constant coefficient term. 
+and one obtains the original system \eqref{eqn:compact_evolution1} that had a co-dimension one bifurcation point. The first term of $g^{3}_{3}$ in equation~\eqref{eqn:normal_form3} becomes $(-0.092 + 10.31\iota)$, which is precisely the $\lambda_{3}$ eigenvalue of the original system. Henceforth the value of $\sigma'=-\sigma_{0}$ is held fixed and it is treated simply as another constant coefficient term. 
 
 The reduced system can be integrated in time to obtain the system response for different Reynolds numbers. This is plotted in figure~\ref{fig:response} for $\Rey=4200$, where one could expect the limit cycle associated with $\lambda_{1,2}$ mode to emerge, and for $\Rey=4500$, where $\lambda_{3,4}$ mode limit-cycle could possibly emerge. The mode amplitudes $\parv_{1},\parv_{3}$ were given a small random initialization and the evolution is tracked. After a sufficiently long time the mode amplitude $\parv_{3}$ has decayed to zero and $\parv_{1}$ dominates the system response for $\Rey=4200$. On the other hand, for $\Rey=4500$, the situation is reversed and $\parv_{3}$ dominates the system response and $\parv_{1}$ has decayed to zero. The final system frequencies are then determined by the dominating modes at saturation. The peak value of the individual mode oscillations is plotted for the entire time history in the right most panel in figure~\ref{fig:response}. The opposing evolution of the two modes at the two different Reynolds numbers is clearly visible.
 \begin{figure}
@@ -159,14 +184,12 @@ The QP solutions have been identified as the edge state between the two limit cy
 	\label{fig:bifurcations}
 \end{figure}
 
-The role of the cubic terms in equation~\eqref{eqn:normal_form}, or the quartic terms in equation~\eqref{eqn:amplitude_equations} is to provide a saturation mechanism for a growing limit-cycle (when the coefficient of these terms is negative). For a standard Hopf bifurcation, only a self saturation term exists, $|\parv_{1}|^{4}$ for equation~\eqref{eqn:amplitude1} for example, and the cross interaction term $|\parv_{1}|^{2}|\parv_{3}|^{2}$ is absent. The cross-interaction terms in both equations~\eqref{eqn:amplitude1} and ~\eqref{eqn:amplitude3} have a negative sign so that the presence of one mode strengthens the saturation mechanism of the other. 
-
-Earlier, we identified the second bifurcation in the flow as the first non-trivial existence of the $\lambda_{3,4}$ LCO, which is the top left panel in figure~\ref{fig:bifurcations}. However, this bifurcation occurs when $|\parv_{1}|=0$. If we imagine a commonly employed strategy for analyzing systems, which is to slowly vary a system parameter and observe the response, the bifurcation scenario looks different. Increasing the Reynolds number marginaly from the first bifurcation point and allowing the system to equilibriate, means that the system reaches the equilibrium point lying of the $|\parv_{1}|$ axis in figure~\ref{fig:bifurcations}. The system then follows the equilibrium point with slow increases of the Reynolds number. At the second bifurcation point, $\widetilde{\Rey}_{2}$, the $\lambda_{3,4}$ LCO would emerge (at least transiently) for a quiescent flow state, however, the non zero $|\parv_{1}|$ leads to added damping effects and the LCO remains stable. In this scenario, the $\lambda_{3,4}$ LCO can only emerge when the \emph{effective} eigenvalue for the $\parv_{3}$ evolution starts having a non-negative real part. This cross-over point can be found by looking at the Reynolds number dependent multiplier of $|\parv_{3}|^{2}$ in equation~\eqref{eqn:amplitude3}, \ie, 
+The role of the cubic terms in equation~\eqref{eqn:normal_form}, or the quartic terms in equation~\eqref{eqn:amplitude_equations} is to provide a saturation mechanism for a growing limit-cycle (when the coefficient of these terms is negative). For a standard Hopf bifurcation, only a self saturation term exists, $|\parv_{1}|^{4}$ for equation~\eqref{eqn:amplitude1} for example, and the cross interaction term $|\parv_{1}|^{2}|\parv_{3}|^{2}$ is absent. The cross-interaction terms in both equations~\eqref{eqn:amplitude1} and ~\eqref{eqn:amplitude3} have a negative sign so that the presence of one mode strengthens the saturation mechanism of the other. Earlier, we identified the second bifurcation in the flow as the first non-trivial existence of the $\lambda_{3,4}$ LCO, which is the top left panel in figure~\ref{fig:bifurcations}. However, this bifurcation occurs when $|\parv_{1}|=0$. If we imagine a commonly employed strategy for analyzing systems, which is to slowly vary a system parameter and observe the response, the bifurcation scenario looks different. Increasing the Reynolds number marginaly from the first bifurcation point and allowing the system to equilibriate, means that the system reaches the equilibrium point lying of the $|\parv_{1}|$ axis in figure~\ref{fig:bifurcations}. The system then follows the equilibrium point with slow increases of the Reynolds number. At the second bifurcation point, $\widetilde{\Rey}_{2}$, the $\lambda_{3,4}$ LCO would emerge (at least transiently) for a quiescent flow state, however, the non zero $|\parv_{1}|$ leads to added damping effects and the LCO remains stable. In this scenario, the $\lambda_{3,4}$ LCO can only emerge when the \emph{effective} eigenvalue for the $\parv_{3}$ evolution starts having a non-negative real part. This cross-over point can be found by looking at the Reynolds number dependent multiplier of $|\parv_{3}|^{2}$ in equation~\eqref{eqn:amplitude3}, \ie, 
 \begin{align}
 	d|\parv_{3}|^2/dt =& \alpha_{3}(\epsilon)|\parv_{3}|^{2} \nonumber \\
 	\alpha_{3}(\epsilon) =& 3.603\epsilon + 2.0\sigma' + 1.262\epsilon^{2} - 0.011\epsilon\sigma' - 1658.8|\parv_{1}(\epsilon)|^{2}, \nonumber
 \end{align}
-where, $|\parv_{1}(\epsilon)|$, is the Reynolds number dependent equilibrium value of $|\parv_{1}|$ for $|\parv_{3}|=0$. When $\alpha_{3}(\epsilon)$ first becomes non-negative, is the new ``path dependent'' bifurcation point. This is found to coincide with $\widetilde{\Rey}_{4}=4853.8$. This was found using the squared amplitude equations~\eqref{eqn:amplitude_equations} however, using equation~\eqref{eqn:normal_form} and calculating the effective eigenvalue of $\parv_{3}$ by considering $|\parv_{1}(\epsilon)|^{2}$ constant leads to the same bifurcation value. At this point, the $\lambda_{1,2}$ LCO becomes unstable, since, any increase in $\parv_{3}$ strengthens the saturation mechanism provided by the cross interaction terms for $\lambda_{1,2}$ LCO, and therefore reduces the equilibrium value of $|\parv_{1}|$. This reduction in $|\parv_{1}|$ implies the effective growth rate for $\parv_{3}$ becomes larger, and a feedback loop is established, moving the system away from the equilibrium point on the $|\parv_{1}|$ axis, ending up at equilibrium point on the $|\parv_{3}|$ axis, and the system now exhibits the $\lambda_{3,4}$ LCO. The system now follows this new equilibrium point with further slow increases in Reynolds numbers. 
+where, $|\parv_{1}(\epsilon)|$, is the Reynolds number dependent equilibrium value of $|\parv_{1}|$ for $|\parv_{3}|=0$. When $\alpha_{3}(\epsilon)$ first becomes non-negative, is the new ``path dependent'' bifurcation point. This is found to coincide with $\widetilde{\Rey}_{4}=4853.8$. This was found using the squared amplitude equations~\eqref{eqn:amplitude_equations} however, using equation~\eqref{eqn:normal_form} and calculating the effective eigenvalue of $\parv_{3}$ by considering $|\parv_{1}(\epsilon)|^{2}$ constant leads to the same bifurcation value. At this point, the $\lambda_{1,2}$ LCO becomes unstable, since, any increase in $\parv_{3}$ strengthens the saturation mechanism provided by the cross interaction terms for $\lambda_{1,2}$ LCO, and therefore reduces the equilibrium value of $|\parv_{1}|$. This reduction in $|\parv_{1}|$ implies the effective growth rate for $\parv_{3}$ becomes larger, and a feedback loop is established, moving the system away from the equilibrium point on the $|\parv_{1}|$ axis, ending up at equilibrium point on the $|\parv_{3}|$ axis, and the system now exhibits the $\lambda_{3,4}$ LCO. The system now follows this new equilibrium point with further slow increases in Reynolds number. 
 
 The phenomenon repeats itself with the roles of the two limit cycles reversed when the system is slowly varied in the opposite direction. For a high enough Reynolds number the $\lambda_{3,4}$ LCO exists and the system is at the equilibrium point on $|\parv_{3}|$ axis. Again, the non-zero $|\parv_{3}|$ causes $\parv_{1}$ to have a damped effective eigenvalue, thereby suppressing the emergence of the $\lambda_{1,2}$ LCO. The effective growth rate along the decreasing Reynolds number path is again predicted using the terms linear in $|\parv_{1}|^{2}$ in equation~\eqref{eqn:amplitude1}, 
 \begin{align}
@@ -176,7 +199,7 @@ where $|\parv_{3}(\epsilon)|$ is the Reynolds number dependent equilibrium value
 
 Usually, this phenomenon is predicted by undertaking a Floquet analysis of the existing limit cycle, as has been done in \cite{bengana19}. Floquet analysis on the reduced system \eqref{eqn:normal_form} confirms that the two limit-cycles indeed become unstable at $\widetilde{\Rey}_{3}$ and $\widetilde{\Rey}_{4}$. The LCO null-clines in figure~\ref{fig:bifurcations} provides the geometrical structure underlying the exchange of stabilities while the reasoning with the effective eigenvalues and cross-interaction saturation terms gives the physical explanation of the process.
 
-Finally, since the equilibrium points are known through the reduced equations, the equilibrium frequencies can also be predicted. This is shown in figure~\ref{fig:equilibrium_omega} (left). The blue line indicates the angular frequencies for the $\lambda_{1,2}$ LCO equilibrium point, while the orange line indicates the angular frequencies for the $\lambda_{3,4}$ LCO. The dashed lines indicate the angular frequencies for the respective modes at the quasi-periodic edge state. The filled black circles indicate the results obtained through the non-linear simulations. The $\lambda_{1,2}$ LCO angular frequencies are well predicted while a small deviation exists for the $\lambda_{3,4}$ LCO at higher Reynolds numbers. As indicated in the work of \cite{meliga17}, these are likely due to contributions of higher order terms which have not been accounted for in the current work. Unlike \cite{bengana19}, it is found that the $\lambda_{1,2}$ LCO remains stable after $\Rey=4600$ if the Reynolds number is slowly increased past this value and the system is allowed to equilibriate. The LCO did lose stability when the Reynolds number was slowly increased to a value of $4900$, in agreement with the $\widetilde{\Rey}_{4}=4853.8$ bifurcation predicted by the model. The bifurcation diagram in terms of the mode amplitudes $|\parv_{1}|, |\parv_{3}|$ is also shown in figure~\ref{fig:equilibrium_omega} (right) as a function of Reynolds number, indicating different regions of LCO stability (solid lines), instability (dotted lines) and QP states (dashed lines). 
+Finally, since the equilibrium points are known through the reduced equations, the equilibrium frequencies can also be predicted. This is shown in figure~\ref{fig:equilibrium_omega} (left). The blue line indicates the angular frequencies for the $\lambda_{1,2}$ LCO equilibrium point, while the orange line indicates the angular frequencies for the $\lambda_{3,4}$ LCO. The dashed lines indicate the angular frequencies for the respective modes at the quasi-periodic edge state. The filled black circles indicate the results obtained through the non-linear simulations. The $\lambda_{1,2}$ LCO angular frequencies are well predicted while a small deviation exists for the $\lambda_{3,4}$ LCO at higher Reynolds numbers. As indicated in the work of \cite{meliga17}, these are likely due to contributions of higher order terms which have not been accounted for in the current work.  The bifurcation diagram in terms of the mode amplitudes $|\parv_{1}|, |\parv_{3}|$ is also shown in figure~\ref{fig:equilibrium_omega} (right) as a function of Reynolds number, indicating different regions of LCO stability (solid lines), instability (dotted lines) and QP states (dashed lines). 
 \begin{figure}
 	\centering
 	\includegraphics[width=.49\textwidth]{equilibrium_omega}

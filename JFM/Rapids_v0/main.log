@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  15 JAN 2026 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  16 JAN 2026 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1329,9 +1329,13 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 
 
 
-Package xcolor Warning: Incompatible color definition on input line 78.
+Package xcolor Warning: Incompatible color definition on input line 73.
 
 [4]
+Overfull \hbox (16.03966pt too wide) detected at line 85
+[]
+ []
+
 Package epstopdf Info: Source file: <imgs/response_Re4200.eps>
 (epstopdf)                    date: 2026-01-14 19:50:32
 (epstopdf)                    size: 28596 bytes
@@ -1341,13 +1345,13 @@ Package epstopdf Info: Source file: <imgs/response_Re4200.eps>
 (epstopdf)                    size: 13825 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/response_Re4200-eps-c
 onverted-to.pdf imgs/response_Re4200.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/response_Re4200-eps-converted-to.pdf, id=213, 578.16pt x 433.62pt>
+<imgs/response_Re4200-eps-converted-to.pdf, id=214, 578.16pt x 433.62pt>
 File: imgs/response_Re4200-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/response_Re4200-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/response_Re4200-eps-converted-to.pdf  used on inp
-ut line 103.
+ut line 128.
 (pdftex.def)             Requested size: 122.88281pt x 92.16122pt.
 Package epstopdf Info: Source file: <imgs/response_Re4500.eps>
 (epstopdf)                    date: 2026-01-14 19:50:32
@@ -1358,13 +1362,13 @@ Package epstopdf Info: Source file: <imgs/response_Re4500.eps>
 (epstopdf)                    size: 14741 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/response_Re4500-eps-c
 onverted-to.pdf imgs/response_Re4500.eps>
-(epstopdf)             \includegraphics on input line 104.
+(epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/response_Re4500-eps-converted-to.pdf, id=214, 578.16pt x 433.62pt>
+<imgs/response_Re4500-eps-converted-to.pdf, id=215, 578.16pt x 433.62pt>
 File: imgs/response_Re4500-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/response_Re4500-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/response_Re4500-eps-converted-to.pdf  used on inp
-ut line 104.
+ut line 129.
 (pdftex.def)             Requested size: 122.88281pt x 92.16122pt.
 Package epstopdf Info: Source file: <imgs/peak_response.eps>
 (epstopdf)                    date: 2026-01-14 19:50:36
@@ -1374,13 +1378,13 @@ Package epstopdf Info: Source file: <imgs/peak_response.eps>
 (epstopdf)                    size: 13297 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/peak_response-eps-con
 verted-to.pdf imgs/peak_response.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/peak_response-eps-converted-to.pdf, id=215, 578.16pt x 433.62pt>
+<imgs/peak_response-eps-converted-to.pdf, id=216, 578.16pt x 433.62pt>
 File: imgs/peak_response-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/peak_response-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/peak_response-eps-converted-to.pdf  used on input
- line 105.
+ line 130.
 (pdftex.def)             Requested size: 122.88281pt x 92.16122pt.
 
 
@@ -1401,13 +1405,13 @@ Package epstopdf Info: Source file: <imgs/bifurcation3.eps>
 (epstopdf)                    size: 16008 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/bifurcation3-eps-conv
 erted-to.pdf imgs/bifurcation3.eps>
-(epstopdf)             \includegraphics on input line 156.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/bifurcation3-eps-converted-to.pdf, id=346, 1156.32pt x 361.35pt>
+<imgs/bifurcation3-eps-converted-to.pdf, id=347, 1156.32pt x 361.35pt>
 File: imgs/bifurcation3-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/bifurcation3-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/bifurcation3-eps-converted-to.pdf  used on input 
-line 156.
+line 181.
 (pdftex.def)             Requested size: 364.79883pt x 113.99678pt.
 Package epstopdf Info: Source file: <imgs/bifurcation45.eps>
 (epstopdf)                    date: 2026-01-14 18:46:41
@@ -1417,34 +1421,34 @@ Package epstopdf Info: Source file: <imgs/bifurcation45.eps>
 (epstopdf)                    size: 16727 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/bifurcation45-eps-con
 verted-to.pdf imgs/bifurcation45.eps>
-(epstopdf)             \includegraphics on input line 157.
+(epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/bifurcation45-eps-converted-to.pdf, id=347, 1156.32pt x 361.35pt>
+<imgs/bifurcation45-eps-converted-to.pdf, id=348, 1156.32pt x 361.35pt>
 File: imgs/bifurcation45-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/bifurcation45-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/bifurcation45-eps-converted-to.pdf  used on input
- line 157.
+ line 182.
 (pdftex.def)             Requested size: 364.79883pt x 113.99678pt.
 
 
 [7 <./imgs/bifurcation3-eps-converted-to.pdf> <./imgs/bifurcation45-eps-convert
 ed-to.pdf>]
 Package epstopdf Info: Source file: <imgs/equilibrium_omega.eps>
-(epstopdf)                    date: 2026-01-15 17:06:58
-(epstopdf)                    size: 18319 bytes
+(epstopdf)                    date: 2026-01-16 16:18:37
+(epstopdf)                    size: 18301 bytes
 (epstopdf)             Output file: <imgs/equilibrium_omega-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2026-01-15 17:07:02
-(epstopdf)                    size: 11422 bytes
+(epstopdf)                    date: 2026-01-16 16:18:52
+(epstopdf)                    size: 11264 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/equilibrium_omega-eps
 -converted-to.pdf imgs/equilibrium_omega.eps>
-(epstopdf)             \includegraphics on input line 182.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/equilibrium_omega-eps-converted-to.pdf, id=443, 505.89pt x 361.35pt>
+<imgs/equilibrium_omega-eps-converted-to.pdf, id=442, 505.89pt x 361.35pt>
 File: imgs/equilibrium_omega-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/equilibrium_omega-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/equilibrium_omega-eps-converted-to.pdf  used on i
-nput line 182.
+nput line 205.
 (pdftex.def)             Requested size: 188.16211pt x 134.40317pt.
 Package epstopdf Info: Source file: <imgs/bifurcation_diagram.eps>
 (epstopdf)                    date: 2026-01-15 16:01:51
@@ -1455,13 +1459,13 @@ pdf>
 (epstopdf)                    size: 10793 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/bifurcation_diagram-e
 ps-converted-to.pdf imgs/bifurcation_diagram.eps>
-(epstopdf)             \includegraphics on input line 183.
+(epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/bifurcation_diagram-eps-converted-to.pdf, id=444, 505.89pt x 361.35pt>
+<imgs/bifurcation_diagram-eps-converted-to.pdf, id=443, 505.89pt x 361.35pt>
 File: imgs/bifurcation_diagram-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/bifurcation_diagram-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/bifurcation_diagram-eps-converted-to.pdf  used on
- input line 183.
+ input line 206.
 (pdftex.def)             Requested size: 188.16211pt x 134.40317pt.
 
 
@@ -1583,11 +1587,11 @@ L3 programming layer <2020/03/25>
 Here is how much of TeX's memory you used:
  19393 strings out of 469626
  304129 string characters out of 5471010
- 687519 words of memory out of 5000000
+ 687517 words of memory out of 5000000
  45761 multiletter control sequences out of 15000+600000
  743841 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,20n,131p,1888b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,20n,131p,2003b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb></u
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/loc
 al/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/te
@@ -1599,10 +1603,10 @@ pe1/public/txfonts/txtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pub
 lic/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx
 /ztmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pf
 b>
-Output written on main.pdf (10 pages, 353700 bytes).
+Output written on main.pdf (10 pages, 353954 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
+ 587 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
  59 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

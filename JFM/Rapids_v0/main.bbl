@@ -62,10 +62,6 @@
   invariant manifolds and their reduced dynamics in high-dimensional finite
   element models}.  \jt{Nonlinear dynamics}  \bvol{107}~(2),  \pg{1417--1450}.
 
-\bibitem[Kuznetsov(2004)]{kuznetsov}
-{\sc \au{Kuznetsov, Yuri~A.}} \yr{2004} {\em Elements of Applied Bifurcation
-  Theory\/}.  \publ{Springer-Verlag New York}.
-
 \bibitem[Loiseau \& Brunton(2018)]{loiseau18}
 {\sc \au{Loiseau, Jean-Christophe} \& \au{Brunton, Steven~L.}} \yr{2018}
   \at{Constrained sparse galerkin regression}.  \jt{Journal of Fluid Mechanics}
@@ -102,6 +98,11 @@
 {\sc \au{Patera, Anthony~T.}} \yr{1984}  \at{A spectral element method for
   fluid dynamics: Laminar flow in a channel expansion}.  \jt{Journal of
   Computational Physics}  \bvol{54}~(3),  \pg{468 -- 488}.
+
+\bibitem[Roberts(1997)]{roberts97}
+{\sc \au{Roberts, A.J.}} \yr{1997}  \at{Low-dimensional modelling of dynamics
+  via computer algebra}.  \jt{Computer Physics Communications}  \bvol{100}~(3),
+   \pg{215--230}.
 
 \bibitem[Roberts(2014)]{roberts14}
 {\sc \au{Roberts, Anthony~J.}} \yr{2014} {\em Model emergent dynamics in
