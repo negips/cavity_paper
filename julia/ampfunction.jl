@@ -51,7 +51,6 @@ function GetAmplitudeSq(ind::Int,var::String,G::Vector{Matrix{T}},Conj::Vector{I
     H[ord1] = copy(Hi)
   end    
 
-
   return H
 end
 #----------------------------------------------------------------------
@@ -64,7 +63,7 @@ SInd = [5; 6; 3; 4; 1; 2]     # Swapped Indices
 #σ0   = -9.1854401740e-02
 σ0   = -9.2e-02
 
-ind  = 5
+ind  = 3
 ind2 = Conj[ind]
 #CenterManifold.DisplayTerms(ind,"z",G)
 CenterManifold.DisplayTermsSwapped(ind,"z",G,SInd)

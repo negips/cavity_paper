@@ -9,6 +9,23 @@ using Random
 
 include("$JULIACOMMON/SetZero.jl")
 
+#---------------------------------------------------------------------- 
+function GetReynolds(ϵ::Float64,Rec::Float64)
+
+  Reci = 1.0/Rec
+  Rey  = Rec/(1.0 - ϵ)
+
+  return Rey
+end  
+#---------------------------------------------------------------------- 
+function GetEpsilon(Rey::Float64,Rec::Float64)
+
+  ϵ    = 1.0 - Rec/Rey
+
+  return ϵ
+end  
+#---------------------------------------------------------------------- 
+
 lafs   = 16
 lgfs   = 12
 lw     = 3        # Linewidth
@@ -18,8 +35,8 @@ mks    = 10       # markersize
 Rec    = 4.131331106555E+03
 Reci   = 1.0/Rec
 
-#FOL    = "cavity_normal_form_pert/"
-FOL    = "cavity_normal_form_pert_O3/"
+FOL    = "cavity_normal_form_pert/"
+#FOL    = "cavity_normal_form_pert_O3/"
 nmodes = 6
 fnames = Vector{String}(undef,nmodes)
 for i in 1:nmodes

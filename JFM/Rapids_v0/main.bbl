@@ -62,17 +62,15 @@
   invariant manifolds and their reduced dynamics in high-dimensional finite
   element models}.  \jt{Nonlinear dynamics}  \bvol{107}~(2),  \pg{1417--1450}.
 
+\bibitem[Landau(1944)]{landau_52}
+{\sc \au{Landau, Lev~Davidovich}} \yr{1944}  \at{On the problem of turbulence}.
+   \bt{In {\em Collected Papers of L.D. Landau\/} (ed. \ed{D.~TER HAAR})},
+  \pg{pp. 387--391}.  \publ{Pergamon}.
+
 \bibitem[Loiseau \& Brunton(2018)]{loiseau18}
 {\sc \au{Loiseau, Jean-Christophe} \& \au{Brunton, Steven~L.}} \yr{2018}
   \at{Constrained sparse galerkin regression}.  \jt{Journal of Fluid Mechanics}
    \bvol{838},  \pg{42–67}.
-
-\bibitem[Manti{\v{c}}-Lugo {\em et~al.\/}(2015)Manti{\v{c}}-Lugo, Arratia \&
-  Gallaire]{mantivc15}
-{\sc \au{Manti{\v{c}}-Lugo, Vladislav}, \au{Arratia, Crist{\'o}bal} \&
-  \au{Gallaire, Fran{\c{c}}ois}} \yr{2015}  \at{A self-consistent model for the
-  saturation dynamics of the vortex shedding around the mean flow in the
-  unstable cylinder wake}.  \jt{Physics of Fluids}  \bvol{27}~(7).
 
 \bibitem[Meliga(2017)]{meliga17}
 {\sc \au{Meliga, Philippe}} \yr{2017}  \at{Harmonics generation and the

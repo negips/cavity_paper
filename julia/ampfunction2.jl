@@ -62,7 +62,7 @@ SInd = [5; 6; 3; 4; 1; 2]     # Swapped Indices
 #σ0   = -9.1854401740e-02
 σ0   = -9.2e-02
 
-ind  = 5
+ind  = 3
 ind2 = Conj[ind]
 #CenterManifold.DisplayTerms(ind,"z",G)
 CenterManifold.DisplayTermsSwapped(ind,"z",G,SInd)
@@ -74,12 +74,12 @@ ind2 = Conj[ind]
 
 H34 = GetAmplitudeSq(ind,"z",G,Conj)
 #CenterManifold.DisplayTerms(ind,"z",H34)
-#CenterManifold.DisplayTermsSwapped(ind,"z",H34,SInd)
+CenterManifold.DisplayTermsSwapped(ind,"z",H34,SInd)
 
 ind  = 5
 H56 = GetAmplitudeSq(ind,"z",G,Conj)
 #CenterManifold.DisplayTerms(ind,"z",H56)
-CenterManifold.DisplayTermsSwapped(ind,"z",H56,SInd)
+#CenterManifold.DisplayTermsSwapped(ind,"z",H56,SInd)
 
 #---------------------------------------------------------------------- 
 

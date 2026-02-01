@@ -28,7 +28,7 @@ for i in 1:nstep
   end
 end  
 
-ax5.plot(z5_vals,z3_range,linestyle="-",linewidth=lw,color=cmap(0),label=L"Nullcline - |z_{1}|\ LCO")
+ax5.plot(z5_vals,z3_range,linestyle="-",linewidth=lw,color=cmap(0),label=L"LCO\ Nullcline - |z_{1}|")
 #ax5.plot(z5_zeros,z3_line,linestyle="--",linewidth=lw,color=cmap(0),label=L"Nullcline - |z_{1}|\ Fixed\ Point")
 ax5.plot(z5_zeros,z3_line,linestyle="--",linewidth=lw,color=cmap(0))
 
@@ -67,7 +67,7 @@ for i in 1:nstep
   end
 end  
 
-ax5.plot(z5_vals,z3_range,linestyle="-",linewidth=lw,color=cmap(1),label=L"Nullcline - |z_{3}|\ LCO")
+ax5.plot(z5_vals,z3_range,linestyle="-",linewidth=lw,color=cmap(1),label=L"LCO\ Nullcline - |z_{3}|")
 #ax5.plot(z5_line,z3_zeros,linestyle="--",linewidth=lw,color=cmap(1),label=L"Nullcline - |z_{3}|\ Fixed\ Point")
 ax5.plot(z5_line,z3_zeros,linestyle="--",linewidth=lw,color=cmap(1))
 
