@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  1 FEB 2026 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  23 FEB 2026 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1443,23 +1443,11 @@ File: imgs/equilibrium_omega-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/equilibrium_omega-eps-converted-to.pdf  used on i
 nput line 202.
 (pdftex.def)             Requested size: 188.16211pt x 134.40317pt.
-Package epstopdf Info: Source file: <imgs/bifurcation_diagram.eps>
-(epstopdf)                    date: 2026-01-15 16:01:51
-(epstopdf)                    size: 22036 bytes
-(epstopdf)             Output file: <imgs/bifurcation_diagram-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2026-01-15 16:02:01
-(epstopdf)                    size: 10793 bytes
-(epstopdf)             Command: <repstopdf --outfile=imgs/bifurcation_diagram-e
-ps-converted-to.pdf imgs/bifurcation_diagram.eps>
-(epstopdf)             \includegraphics on input line 203.
-Package epstopdf Info: Output file is already uptodate.
-<imgs/bifurcation_diagram-eps-converted-to.pdf, id=444, 505.89pt x 361.35pt>
-File: imgs/bifurcation_diagram-eps-converted-to.pdf Graphic file (type pdf)
-<use imgs/bifurcation_diagram-eps-converted-to.pdf>
-Package pdftex.def Info: imgs/bifurcation_diagram-eps-converted-to.pdf  used on
- input line 203.
-(pdftex.def)             Requested size: 188.16211pt x 134.40317pt.
+<imgs/bifurcation_diagram.jpg, id=444, 505.6491pt x 361.1091pt>
+File: imgs/bifurcation_diagram.jpg Graphic file (type jpg)
+<use imgs/bifurcation_diagram.jpg>
+Package pdftex.def Info: imgs/bifurcation_diagram.jpg  used on input line 203.
+(pdftex.def)             Requested size: 188.16211pt x 134.37418pt.
 
 
 
@@ -1472,8 +1460,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.73262pt on input line 94.
 
 
-[9 <./imgs/equilibrium_omega-eps-converted-to.pdf> <./imgs/bifurcation_diagram-
-eps-converted-to.pdf>] (./main.bbl
+[9 <./imgs/equilibrium_omega-eps-converted-to.pdf> <./imgs/bifurcation_diagram.
+jpg>] (./main.bbl
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.73pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1568,7 +1556,7 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 )
 
 
-Package xcolor Warning: Incompatible color definition on input line 115.
+Package xcolor Warning: Incompatible color definition on input line 119.
 
 [10{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc
 }] (./main.aux)
@@ -1578,10 +1566,10 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 19389 strings out of 469626
- 304077 string characters out of 5471010
- 687432 words of memory out of 5000000
- 45758 multiletter control sequences out of 15000+600000
+ 19367 strings out of 469626
+ 303335 string characters out of 5471010
+ 687433 words of memory out of 5000000
+ 45736 multiletter control sequences out of 15000+600000
  743841 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,20n,131p,2033b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1596,10 +1584,10 @@ pe1/public/txfonts/txtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pub
 lic/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx
 /ztmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pf
 b>
-Output written on main.pdf (10 pages, 354234 bytes).
+Output written on main.pdf (10 pages, 666189 bytes).
 PDF statistics:
- 590 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
+ 567 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
  58 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
