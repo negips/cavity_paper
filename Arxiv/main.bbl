@@ -62,16 +62,16 @@ Jain, S. and Haller, G. (2022).
   high-dimensional finite element models.
 \newblock {\em Nonlinear dynamics}, 107(2):1417--1450.
 
+\bibitem[Landau, 1944]{landau_52}
+Landau, L.~D. (1944).
+\newblock On the problem of turbulence.
+\newblock In HAAR, D.~T., editor, {\em Collected Papers of L.D. Landau}, pages
+  387--391. Pergamon.
+
 \bibitem[Loiseau and Brunton, 2018]{loiseau18}
 Loiseau, J.-C. and Brunton, S.~L. (2018).
 \newblock Constrained sparse galerkin regression.
 \newblock {\em Journal of Fluid Mechanics}, 838:42–67.
-
-\bibitem[Manti{\v{c}}-Lugo et~al., 2015]{mantivc15}
-Manti{\v{c}}-Lugo, V., Arratia, C., and Gallaire, F. (2015).
-\newblock A self-consistent model for the saturation dynamics of the vortex
-  shedding around the mean flow in the unstable cylinder wake.
-\newblock {\em Physics of Fluids}, 27(7).
 
 \bibitem[Meliga, 2017]{meliga17}
 Meliga, P. (2017).
@@ -100,6 +100,11 @@ Patera, A.~T. (1984).
 \newblock A spectral element method for fluid dynamics: Laminar flow in a
   channel expansion.
 \newblock {\em Journal of Computational Physics}, 54(3):468 -- 488.
+
+\bibitem[Roberts, 1997]{roberts97}
+Roberts, A. (1997).
+\newblock Low-dimensional modelling of dynamics via computer algebra.
+\newblock {\em Computer Physics Communications}, 100(3):215--230.
 
 \bibitem[Roberts, 2014]{roberts14}
 Roberts, A.~J. (2014).
